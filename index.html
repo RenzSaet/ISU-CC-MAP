@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <title>ISU CC Map</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+        <style>
+            :root {
+                --forest: #143821;
+                --green: #2f7d4f;
+                --leaf: #52a36b;
+                --mist: #e9f2e4;
+                --paper: #f7faf4;
+                --ink: #1b2b20;
+                --muted: #4b6a55;
+                --line: #c4d0bd;
+                --coral: #f26a1b;
+                --shadow: 0 2px 12px rgba(20, 56, 33, 0.22);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                height: 100vh;
+                margin: 0;
+                font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                color: var(--ink);
+                -webkit-font-smoothing: antialiased;
+                overflow: hidden;
+            }
+
+            button, input, select {
+                font-family: inherit;
+            }
+
+            button {
+                cursor: pointer;
+            }
+
+            :focus-visible {
+                outline: 3px solid var(--coral);
+                outline-offset: 2px;
+            }
+
+            /* Search Bar */
+            #searchbar {
+                position: fixed;
+                top: 12px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: min(560px, calc(100% - 24px));
+                padding: 4px 4px 4px 6px;
+
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                background: #fff;
+                border-radius: 28px;
+                box-shadow: var(--shadow);
+                z-index: 6;
+            }
+
+            #searchbox {
+                flex: 1;
+                min-width: 0;
+                height: 44px;
+                border: 0;
+                background: transparent;
+                font-size: 16px;
+                font-weight: 500;
+                color: var(--ink);
+                padding: 0 8px;
+            }
+
+            #searchbox::placeholder {
+                color: #6f8a77;
+            }
+
+            #searchbox:focus-visible {
+                outline: none;
+            }
+
+            #returnbutton, #searchbutton {
+                width: 44px;
+                height: 44px;
+                flex: none;
+                border: 0;
+                border-radius: 50%;
+                font-size: 18px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: background 0.15s;
+            }
+
+            #returnbutton {
+                display: none;
+                background: transparent;
+                color: var(--green);
+            }
+
+            #returnbutton:hover {
+                background: var(--mist);
+            }
+
+            #searchbutton {
+                background: var(--forest);
+                color: #fff;
+            }
+
+            #searchbutton:hover {
+                background: var(--green);
+            }
+
+            #status {
+                position: absolute;
+                top: calc(100% + 10px);
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0;
+                width: max-content;
+                max-width: 100%;
+                padding: 10px 16px;
+                border-radius: 14px;
+                background: #fff;
+                box-shadow: var(--shadow);
+                font-size: 14px;
+                font-weight: 600;
+                text-align: center;
+                color: var(--forest);
+            }
+
+            #status:empty {
+                display: none;
+            }
+
+            /*Search Results*/
+            #location-list-wrapper::before {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 76px;
+                background: var(--paper);
+                z-index: 5;
+                display: var(--displaytype, none);
+            }
+
+            #location-list {
+                position: fixed;
+                inset: 0;
+                background: var(--paper);
+                z-index: 4;
+                padding: 84px 12px 24px;
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                overflow: auto;
+            }
+
+            #location-list .location-name {
+                width: min(560px, 100%);
+                min-height: 52px;
+                padding: 0 12px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+
+            #location-list .location-name::after {
+                content: "\f054";
+                font-family: FontAwesome;
+                font-size: 11px;
+                margin-left: auto;
+                color: #9fbf95;
+            }
+
+            #location-list .location-name:hover, #location-list .location-name:active {
+                background: var(--mist);
+            }
+
+            .dot {
+                width: 12px;
+                height: 12px;
+                flex: none;
+                border-radius: 50%;
+                border: 1px solid rgba(15, 44, 26, 0.35);
+            }
+
+            #no-results {
+                display: none;
+                position: fixed;
+                top: 130px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                color: var(--muted);
+                font-size: 15px;
+                z-index: 5;
+                margin: 0;
+            }
+
+            #no-results.show {
+                display: block;
+            }
+
+            /* Map */
+            #map {
+                width: 100%;
+                height: 100vh;
+                z-index: 0;
+                position: relative;
+                display: block;
+            }
+
+            .leaflet-container {
+                background-color: #e3eedb;
+                font-family: inherit;
+            }
+
+            .leaflet-bar {
+                border: 0 !important;
+                border-radius: 14px !important;
+                box-shadow: var(--shadow) !important;
+                overflow: hidden;
+            }
+
+            .leaflet-bar a, .leaflet-bar button {
+                width: 44px !important;
+                height: 44px !important;
+                line-height: 44px !important;
+                font-size: 18px;
+                color: var(--forest) !important;
+                background: #fff !important;
+                border: 0 !important;
+                border-bottom: 1px solid #e3eedb !important;
+            }
+
+            .leaflet-bar a:last-child, .leaflet-bar button:last-child {
+                border-bottom: 0 !important;
+            }
+
+            .leaflet-bar a:hover, .leaflet-bar button:hover {
+                background: var(--mist) !important;
+            }
+
+            .leaflet-popup-content-wrapper {
+                border-radius: 12px;
+                font-weight: 600;
+                color: var(--forest);
+            }
+            
+            /* Bottom sheet (side panel on desktop) */
+            #sheet {
+                width: 100vw;
+                height: 200vh;
+                border-radius: 24px 24px 0 0;
+                background: #fff;
+                position: fixed;
+                left: 0;
+                top: 90vh;
+                z-index: 3;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                user-select: none;
+                box-shadow: 0 -4px 20px rgba(20, 56, 33, 0.22);
+            }
+        
+            #sheet #handle {
+                position: absolute;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 40px;
+                height: 5px;
+                background: var(--line);
+                border-radius: 100px;
+                touch-action: none;
+                cursor: grab;
+            }
+
+            #sheet #handle::after {
+                content: "";
+                position: absolute;
+                inset: -14px -40px;
+            }
+        
+            #sheet #content {
+                width: 100%;
+                max-width: 560px;
+                height: 80vh;
+                padding: 28px 20px 0;
+                text-align: left;
+                overflow-y: auto;
+                user-select: text;
+            }
+
+            #target-location-name {
+                margin: 0;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 1.2;
+                color: var(--forest);
+            }
+
+            #target-location-category {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin: 6px 0 0;
+                font-size: 14px;
+                color: var(--muted);
+            }
+
+            #sheet:not(.has-selection) #target-location-category .dot {
+                display: none;
+            }
+
+            #sheet:not(.has-selection) #target-location-details {
+                display: none;
+            }
+
+            #target-location-details {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                margin-top: 16px;
+            }
+
+            #sheet-directions, .buttons button {
+                height: 48px;
+                border-radius: 24px;
+                font-size: 15px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            .primary {
+                background: var(--forest);
+                color: #fff;
+                border: 0;
+            }
+
+            .primary:hover {
+                background: var(--green);
+            }
+
+            .secondary {
+                background: #fff;
+                color: var(--forest);
+                border: 2px solid var(--forest);
+            }
+
+            .secondary:hover {
+                background: var(--mist);
+            }
+
+            .detail-card {
+                background: var(--mist);
+                border-radius: 14px;
+                padding: 14px 16px;
+                font-size: 14px;
+            }
+
+            .detail-card h2 {
+                margin: 0 0 6px;
+                font-size: 13px;
+                font-weight: 700;
+                color: var(--muted);
+            }
+
+            #target-location-image {
+                min-height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1.5px dashed #9fbf95;
+                background: #f1f7ec;
+                color: var(--muted);
+
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center bottom;
+            }
+
+            /* Directions dialog */
+            #direction-panel {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: min(380px, calc(100vw - 32px));
+                background: #fff;
+                border-radius: 20px;
+                padding: 20px;
+                z-index: 9;
+                display: none;
+                flex-direction: column;
+                gap: 6px;
+                box-shadow: 0 0 0 100vmax rgba(20, 56, 33, 0.38), 0 12px 32px rgba(20, 56, 33, 0.3);
+            }
+
+            #direction-panel .panel-head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 8px;
+            }
+
+            #direction-panel h1 {
+                margin: 0;
+                font-size: 20px;
+                color: var(--forest);
+            }
+
+            #direction-panel #close {
+                width: 44px;
+                height: 44px;
+                margin-right: -8px;
+                border: 0;
+                border-radius: 50%;
+                background: transparent;
+                color: var(--muted);
+                font-size: 20px;
+            }
+
+            #direction-panel #close:hover {
+                background: var(--mist);
+            }
+
+            #direction-panel label {
+                margin-top: 8px;
+                font-size: 13px;
+                font-weight: 600;
+                color: var(--muted);
+            }
+
+            #direction-panel select {
+                width: 100%;
+                height: 48px;
+                padding: 0 12px;
+                border: 1.5px solid var(--line);
+                border-radius: 12px;
+                background: #fff;
+                color: var(--ink);
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            #direction-panel .buttons {
+                display: flex;
+                gap: 10px;
+                margin-top: 16px;
+            }
+
+            #direction-panel .buttons button {
+                flex: 1;
+            }
+
+            @media (max-width: 768px) {
+                .leaflet-top.leaflet-right {
+                    margin-top: 72px;
+                }
+            }
+
+            @media (min-width: 769px) {
+                #sheet {
+                    width: 400px;
+                    left: 16px;
+                }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                * {
+                    transition: none !important;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="searchbar" role="search">
+            <button id="returnbutton" aria-label="Close search"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+            <input type="text" id="searchbox" placeholder="Search buildings" aria-label="Search buildings" autocomplete="off" enterkeyhint="search">
+            <button id="searchbutton" aria-label="Go to building"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <p id="status" role="status" aria-live="polite"></p>
+        </div>
+
+        <div id="location-list-wrapper">
+            <div id="location-list"></div>
+            <p id="no-results">No building matches that name.</p>
+        </div>
+
+        <div id="map"></div>
+
+        <div id="sheet" aria-label="Building details">
+            <div id="handle" role="separator" aria-label="Drag to resize"></div>
+
+            <div id="content">
+                <h1 id="target-location-name">ISU CC Map</h1>
+
+                <p id="target-location-category">
+                    <span class="dot"></span>
+                    <span id="category-text">Tap a building to see its details</span>
+                </p>
+
+                <div id="target-location-details">
+                    <button id="sheet-directions" class="primary"><i class="fa fa-location-arrow" aria-hidden="true"></i>Directions</button>
+
+                    <div id="target-location-image" class="detail-card">Photo coming soon</div>
+
+                    <div class="detail-card">
+                        <h2>Administrators</h2>
+                        <div id="target-location-admins">Admins name here</div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h2>Rooms</h2>
+                        <div id="target-location-rooms">List of rooms</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="direction-panel" role="dialog" aria-modal="true" aria-labelledby="dir-title">
+            <div class="panel-head">
+                <h1 id="dir-title">Walking directions</h1>
+
+                <button id="close" aria-label="Close" onclick="this.closest('#direction-panel').style.display = 'none'">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <label for="from-location">From</label>
+            <select id="from-location">
+                <option>Current Location</option>
+            </select>
+
+            <label for="to-location">To</label>
+            <select id="to-location"></select>
+
+            <div class="buttons">
+                <button class="primary" onclick="showRoute()">Show route</button>
+                <button class="secondary" onclick="window.clearPath()">Clear route</button>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+        <!--Display Map-->
+        <script>
+            const map = L.map("map", {
+                // minZoom: 19,
+                maxBoundsViscosity: 1.0
+            });
+            map.zoomControl.setPosition("topright");
+            window.map = map;
+
+            // Building categories (same grouping and colors as the printed map)
+            const buildingsCategory = {};
+            const CATS = {
+                admin: { label: "Administration & offices", color: "#1f5d3a" },
+                acad: { label: "Academic building", color: "#52a36b" },
+                service: { label: "Student services", color: "#b9d98a" },
+                hostel: { label: "Hostel", color: "#e6d9a8" },
+                sport: { label: "Sports & recreation", color: "#8cc7a1" },
+                util: { label: "Utilities & security", color: "#c9d3c4" }
+            };
+            window.CATS = CATS;
+            window.catOf = (name) => {
+                return CATS[buildingsCategory[name]];
+            };
+
+            const buildingsCenterCoord = {};
+            const buildingsEntranceCoord = {};
+
+            const showBuildingInfo = (name) => {
+                const targetLocationName = document.getElementById("target-location-name");
+                targetLocationName.textContent = name;
+
+                const category = window.catOf(name);
+                document.getElementById("category-text").textContent = category.label;
+                document.querySelector("#target-location-category .dot").style.background = category.color;
+                document.getElementById("sheet").classList.add("has-selection");
+                document.getElementById("content").scrollTop = 0;
+
+                const targetLocationDetails = document.getElementById("target-location-details");
+
+                const targetLocationImage = document.getElementById("target-location-image");
+                const imageUrl = `img/${name.toLowerCase()}.jpg`;
+                const imgTester = new Image();
+
+                imgTester.onload = function() {
+                    targetLocationImage.style.backgroundImage = `url('${imageUrl}')`;
+                    targetLocationImage.innerHTML = "";
+                };
+
+                // When building does not have image
+                imgTester.onerror = function() {
+                    targetLocationImage.style.backgroundImage = "none";
+                    targetLocationImage.innerHTML = "Photo coming soon";
+                };
+
+                imgTester.src = imageUrl;
+
+                const sheet = document.getElementById("sheet");
+                if (!((parseInt(window.getComputedStyle(sheet).getPropertyValue("top")) * 100 / window.innerHeight) < 80)) {
+                    sheet.style.top = "66vh";
+                }
+            }
+
+            window.showBuildingInfo = showBuildingInfo;
+
+            const statusLabel = document.getElementById("status");
+            let statusTimer = null;
+
+            function showStatus(message, duration = 5000, warning = false) {
+                clearTimeout(statusTimer);
+
+                statusLabel.innerHTML = message;
+                
+                if (warning) {
+                    statusLabel.style.color = warning ? "#b42318" : "";
+                }
+
+                if (duration > 0) {
+                    statusTimer = setTimeout(() => {
+                        statusLabel.innerHTML = "";
+                        statusLabel.style.color = "";
+                        statusTimer = null;
+                    }, duration);
+                }
+            }
+
+            window.showStatus = showStatus;
+
+            // 1. Load your GeoJSON file
+            async function displayMap() {
+                try {
+                    const response = await fetch("./map.geojson");
+
+                    if (!response.ok) {
+                        throw new Error("Could not load map.geojson");
+                    }
+
+                    const campusData = await response.json();
+
+                    // 2. Calculate the geographic boundaries of the map
+                    const geoJsonLayer = L.geoJSON(campusData);
+                    const geoJsonBounds = geoJsonLayer.getBounds();
+
+                    window.campusBounds = geoJsonBounds;
+
+                    const center = geoJsonBounds.getCenter();
+
+                    const lngSpan = geoJsonBounds.getEast() - geoJsonBounds.getWest();
+                    const latSpan = geoJsonBounds.getNorth() - geoJsonBounds.getSouth();
+
+                    // 3. Adjust the SVG's position and size
+                    const offsetLng = 0.000000;
+                    const offsetLat = 0.000001;
+                    const scaleX = 1.054;
+                    const scaleY = 1.069;
+
+                    const halfLng = (lngSpan * scaleX) / 2;
+                    const halfLat = (latSpan * scaleY) / 2;
+
+                    const svgBounds = L.latLngBounds([
+                            center.lat - halfLat + offsetLat,
+                            center.lng - halfLng + offsetLng
+                        ], [
+                            center.lat + halfLat + offsetLat,
+                            center.lng + halfLng + offsetLng
+                    ]);
+
+                    // Get entrance coordinates
+                    campusData.features.forEach(feature => {
+                        if (feature.properties?.type === "entrance") {
+                            const name = feature.properties.name;
+                            const coords = feature.geometry.coordinates;
+
+                            const convertedName = name.split(" ").slice(0, -1).join(" ");
+
+                            buildingsEntranceCoord[convertedName] = {
+                                lat: coords[1],
+                                lng: coords[0]
+                            };
+                        }
+                    });
+
+                    // 4. Display the SVG over the geographic area
+                    L.imageOverlay("./map.svg", svgBounds, {
+                        opacity: 1,
+                        interactive: false
+                    }).addTo(map);
+
+                    // 5. Display the GeoJSON features over the SVG
+                    L.geoJSON(campusData, {
+                        filter: feature => {
+                            return feature.properties?.type !== "entrance";
+                        },
+
+                        style: {
+                            color: "transparent",
+                            weight: 2,
+                            opacity: 0.25,
+                            fillColor: "#60a5fa",
+                            fillOpacity: 0.015
+                        },
+
+                        onEachFeature: (feature, layer) => {
+                            const name = feature.properties?.name || "Unnamed feature";
+
+                            if (!layer.getLatLng && feature.geometry?.type == "Polygon" && feature.properties?.name != "Unknown") {
+                                const coords = layer.getBounds().getCenter();
+
+                                buildingsCenterCoord[name] = {
+                                    lat: coords.lat,
+                                    lng: coords.lng
+                                }
+                            }
+
+                            if (feature.properties?.name == "Unknown") {
+                                layer.bindPopup("Unknown");
+                            }
+
+                            if (feature.properties?.category) {
+                                buildingsCategory[name] = feature.properties?.category;
+                            }
+
+                            layer.on("click", () => {
+                                if (feature.geometry?.type != "Polygon") {
+                                    return;
+                                }
+
+                                let lat, long;
+
+                                if (layer.getLatLng) {
+                                    const coords = layer.getLatLng();
+
+                                    lat = coords.lat;
+                                    long = coords.lng;
+                                }
+                                else {
+                                    // For polygons and lines
+                                    const coords = layer.getBounds().getCenter();
+                                    lat = coords.lat;
+                                    long = coords.lng;
+                                }
+
+                                // layer.bindPopup(`${name}<br>Latitude: ${lat}<br>Longitude: ${long}`);
+
+                                // For bottom sheet
+                                if (feature.properties?.name != "Unknown") {
+                                    showBuildingInfo(name);
+                                }
+                            });
+                        }
+                    }).addTo(map);
+
+                    window.buildingsCenterCoord = buildingsCenterCoord;
+                    window.buildingsEntranceCoord = buildingsEntranceCoord;
+
+                    // 6. Zoom the map to fit the campus
+                    const bounds = geoJsonLayer.getBounds();
+                    const paddedBounds = bounds.pad(0.05);
+
+                    map.fitBounds(paddedBounds, {
+                        padding: [10, 10]
+                    });
+
+                    // 7. Limit how far the user can pan away
+                    map.setMaxBounds(paddedBounds.pad(0.5));
+
+                    map.setView([center.lat, center.lng], 18);
+                }
+                catch (error) {
+                    console.error("Error displaying map:", error);
+                }
+            }
+
+            displayMap();
+        </script>
+
+        <!--Pathfinding-->
+        <script type="module">
+            import PathFinder from "https://esm.sh/geojson-path-finder@2";
+
+            let routeLayer;
+
+            function createPoint(coordinates) {
+                return {
+                    type: "Feature",
+                    properties: {},
+                    geometry: {
+                        type: "Point",
+                        coordinates
+                    }
+                };
+            }
+
+            function findNearestVertex(coordinates, network, limit = 20) {
+                const candidates = [];
+
+                for (const feature of network.features) {
+                    const geometry = feature.geometry;
+
+                    let lines = [];
+
+                    if (geometry.type == "LineString") {
+                        lines = [geometry.coordinates];
+                    }
+                    else if (geometry.type == "MultiLineString") {
+                        lines = geometry.coordinates;
+                    }
+
+                    for (const line of lines) {
+                        for (const vertex of line) {
+                            const distance = L.latLng(
+                                vertex[1],
+                                vertex[0],
+                            ).distanceTo(
+                                L.latLng(
+                                    coordinates[1],
+                                    coordinates[0]
+                                )
+                            );
+
+                            candidates.push({
+                                vertex,
+                                distance
+                            });
+                        }
+                    }
+                }
+
+                if (candidates.length == 0) {
+                    throw new Error("No path vertices found.");
+                }
+
+                return candidates.sort((a, b) => a.distance - b.distance).slice(0, limit);
+            }
+
+            async function displayPath(startCoords, endCoords) {
+                try {
+                    const response = await fetch("./map.geojson");
+
+                    if (!response.ok) {
+                        throw new Error("Could not load map.geojson");
+                    }
+
+                    const campusData = await response.json();
+
+                    // Keep walking lines only
+                    const walkingNetwork = {
+                        type: "FeatureCollection",
+                        features: campusData.features.filter(feature => {
+                            return feature.geometry?.type == "LineString" || feature.geometry?.type == "MultiLineString"
+                        })
+                    }
+
+                    if (walkingNetwork.features.length == 0) {
+                        throw new Error("No walking path found.");
+                    }
+
+                    // Building the routing graph
+                    const pathFinder = new PathFinder(walkingNetwork);
+
+                    // Snap both locations to actual path vertices
+                    const snappedStart = findNearestVertex(
+                        startCoords,
+                        walkingNetwork
+                    );
+
+                    const snappedEnd = findNearestVertex(
+                        endCoords,
+                        walkingNetwork
+                    );
+
+                    // Calculate shortest route
+                    let result = null;
+                    let shortestDistance = Infinity;
+
+                    let bestStart = null;
+                    let bestEnd = null;
+
+                    for (const candidateStart of snappedStart) {
+                        for (const candidateEnd of snappedEnd) {
+                            const currentResult = pathFinder.findPath(
+                                createPoint(candidateStart.vertex),
+                                createPoint(candidateEnd.vertex)
+                            );
+
+                            if (!currentResult) {
+                                continue;
+                            }
+
+                            const startDistance = candidateStart.distance;
+                            const endDistance = candidateEnd.distance;
+                            const walkingDistance = currentResult.weight * 1000;
+
+                            const currentDistance = startDistance + walkingDistance + endDistance;
+
+                            if (shortestDistance > currentDistance) {
+                                shortestDistance = currentDistance;
+                                result = currentResult;
+
+                                bestStart = candidateStart.vertex;
+                                bestEnd = candidateEnd.vertex;
+                            }
+                        }
+                    }
+
+                    // Stop if no route exists
+                    if (!result) {
+                        console.warn("No route found. Check whether the walking paths connect.");
+                        return false;
+                    }
+
+                    console.log("Route coordinates:", result.path);
+                    console.log("Route length:", result.weight.toFixed(3) * 1000, "m");
+
+                    // Remove previous route
+                    if (routeLayer) {
+                        window.map.removeLayer(routeLayer);
+                    }
+
+                    // Convert route to GeoJSON
+                    const routeFeatures = [
+                        // Main walking route
+                        {
+                            type: "Feature",
+                            properties: { type: "main-route" },
+                            geometry: {
+                                type: "LineString",
+                                coordinates: result.path
+                            }
+                        },
+
+                        // Connect starting point to network
+                        {
+                            type: "Feature",
+                            properties: { type: "start-connector" },
+                            geometry: {
+                                type: "LineString",
+                                coordinates: [
+                                    startCoords,
+                                    bestStart
+                                ]
+                            }
+                        },
+
+                        // Connect walking network to destination
+                        {
+                            type: "Feature",
+                            properties: { type: "destination-connector" },
+                            geometry: {
+                                type: "LineString",
+                                coordinates: [
+                                    bestEnd,
+                                    endCoords
+                                ]
+                            }
+                        }
+                    ];
+
+                    // Draw route on the map
+                    routeLayer = L.geoJSON({
+                        type: "FeatureCollection",
+                        features: routeFeatures
+                    }, {
+                        style: feature => {
+                            if (feature.properties.type == "main-route") {
+                                return {
+                                    color: "#f26a1b",
+                                    weight: 5,
+                                    opacity: 1
+                                };
+                            }
+
+                            return {
+                                color: "#f26a1b",
+                                weight: 4,
+                                opacity: 1,
+                                dashArray: "1, 9",
+                                linCap: "round"
+                            };
+                        }
+                    }).addTo(window.map);
+
+                    routeLayer.bringToFront();
+                    
+                    return true;
+                }
+                catch (error) {
+                    console.log("Error tracing path:", error);
+                    return false;
+                }
+            }
+
+            window.displayPath = displayPath;
+
+            function clearPath() {
+                if (routeLayer) {
+                    window.map.removeLayer(routeLayer);
+                    routeLayer = null;
+                }
+                
+                window.stopLivePathTracing();
+            }
+
+            window.clearPath = clearPath;
+        </script>
+
+        <!--Location Option Loader-->
+        <script>
+            const locationList = document.getElementById("location-list");
+            const locationListWrapper = document.getElementById("location-list-wrapper");
+            const searchbox = document.getElementById("searchbox");
+            const returnbutton = document.getElementById("returnbutton");
+            const searchbutton = document.getElementById("searchbutton");
+            const noResults = document.getElementById("no-results");
+
+            const directionPanel = document.getElementById("direction-panel");
+            const fromLocation = document.getElementById("from-location");
+            const toLocation = document.getElementById("to-location");
+
+            window.directionPanel = directionPanel;
+
+            let searchBoxIsOpen = false;
+            window.searchBoxIsOpen = searchBoxIsOpen;
+
+            async function loadLocationNames() {
+                try {
+                    const response = await fetch("./map.geojson");
+
+                    if (!response.ok) {
+                        throw new Error("Could not load map.geojson");
+                    }
+
+                    const campusData = await response.json();
+
+                    // Filtering navigatable locations
+                    const locations = {
+                        type: "FeatureCollection",
+                        features: campusData.features.filter(feature => {
+                            return feature.properties?.type == "building"
+                        })
+                    };
+
+                    const seenNames = new Set();
+
+                    for (const location of locations.features) {
+                        const locationName = location.properties?.name;
+
+                        console.log(locationName);
+
+                        if (!locationName || seenNames.has(locationName)) {
+                            continue;
+                        }
+
+                        seenNames.add(locationName);
+
+                        const name = document.createElement("div");
+                        name.classList.add("location-name");
+                        name.dataset.name = locationName;
+
+                        const dot = document.createElement("span");
+                        dot.className = "dot";
+                        dot.style.background = window.catOf(locationName).color;
+
+                        const label = document.createElement("span");
+                        label.textContent = locationName;
+
+                        name.append(dot, label);
+
+                        locationList.appendChild(name);
+
+                        const option1 = document.createElement("option");
+                        option1.textContent = locationName;
+                        option1.value = locationName;
+                        fromLocation.appendChild(option1);
+
+                        const option2 = document.createElement("option");
+                        option2.textContent = locationName;
+                        option2.value = locationName;
+                        toLocation.appendChild(option2);
+                    }
+
+                    const searchFilterer = () => {
+                        const query = searchbox.value.trim().toLowerCase();
+                        let visible = 0;
+
+                        for (const item of Array.from(locationList.children)) {
+                            const match = item.dataset.name.toLowerCase().includes(query);
+                            item.style.display = match ? "flex" : "none";
+                            if (match) visible++;
+                        }
+
+                        noResults.classList.toggle("show", visible == 0);
+                    }
+
+                    // Show search list when searchbox is clicked
+                    searchbox.addEventListener("click", () => {
+                        if (!searchBoxIsOpen) {
+                            locationList.style.display = "flex";
+                            locationListWrapper.style.setProperty("--displaytype", "block");
+                            searchbox.addEventListener("input", searchFilterer);
+                            returnbutton.style.display = "flex";
+                            searchBoxIsOpen = true;
+                        }
+                    });
+
+                    // Hide search list
+                    returnbutton.addEventListener("click", () => {
+                        if (searchBoxIsOpen) {
+                            locationList.style.display = "none";
+                            locationListWrapper.style.setProperty("--displaytype", "none");
+                            searchbox.removeEventListener("input", searchFilterer);
+                            returnbutton.style.display = "none";
+                            searchBoxIsOpen = false;
+                        }
+                    });
+
+                    Array.from(locationList.children).forEach((loc) => {
+                        loc.addEventListener("click", event => {
+                            searchbox.value = loc.dataset.name;
+                            searchbutton.click();
+                        });
+                    });
+
+                    // Zoom-in to searched building
+                    searchbutton.addEventListener("click", () => {
+                        const targetBuildingCoord = window.buildingsCenterCoord[searchbox.value];
+
+                        if (targetBuildingCoord) {
+                            const clickEvent = new Event('click');
+                            returnbutton.dispatchEvent(clickEvent);
+
+                            window.map.flyTo([targetBuildingCoord.lat, targetBuildingCoord.lng], 20);
+                            window.showBuildingInfo(searchbox.value);
+                        }
+                        else {
+                            if (searchbox.value == "") {
+                                window.showStatus("Please enter a building name.", 5000, true);
+                            }
+                            else {
+                                window.showStatus("Building not found.", 5000, true);
+                            }
+                        }
+                        
+                    });
+                }
+                catch (error) {
+                    console.log("Error loading names:", error);
+                    showStatus("An error has occured, please reload the page", 5000, true);
+                }
+            }
+
+            loadLocationNames();
+        </script>
+
+        <!--Current Location Marker-->
+        <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+        <script>
+            let userMarker = null;
+            window.userMarker = userMarker;
+
+            let accuracyCircle = null;
+
+            let locationWatcher = null;
+
+            function startLiveLocation() {
+                if (!navigator.geolocation) {
+                    showStatus("Geolocation is not supported by this browser.", 5000, true);
+                    return;
+                }
+
+                // Avoid creating multiple location watchers
+                if (locationWatcher != null) {
+                    return;
+                }
+
+                showStatus("Getting your location...", 0);
+
+                locationWatcher = navigator.geolocation.watchPosition((position) => {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+
+                    const userCoords = [latitude, longitude];
+                    const accuracy = position.coords.accuracy;
+
+                    if (!userMarker) {
+                        // Create marker for the first location update
+                        userMarker = L.marker(userCoords).addTo(map);
+                    } else {
+                        // Update existing marker
+                        userMarker.setLatLng(userCoords);
+                    }
+
+                    if (!accuracyCircle) {
+                        accuracyCircle = L.circle(userCoords, {
+                            radius: accuracy,
+                            color: "#4285F4",
+                            weight: 1,
+                            fillColor: "#4285F4",
+                            fillOpacity: 0.15
+                        }).addTo(map);
+                    } else {
+                        accuracyCircle.setLatLng(userCoords);
+                        accuracyCircle.setRadius(accuracy);
+                    }
+
+                    showStatus("Your location is updated.", 2000);
+                }, (error) => {
+                    console.error("Geolocation error:", error);
+                    showStatus("Unable to retrieve your location.", 5000, true);
+
+                    stopLiveLocation();
+                }, {
+                    enableHighAccuracy: true,
+                    maximumAge: 1000,
+                    timeout: 10000
+                });
+            }
+
+            function stopLiveLocation() {
+                if (locationWatcher != null) {
+                    navigator.geolocation.clearWatch(locationWatcher);
+                    locationWatcher = null;
+                }
+            }
+
+            // Live path updater
+            let pathWatcher = null;
+            let isUpdatingPath = false;
+
+            function startLivePathTracing(toCoord) {
+                stopLivePathTracing();
+
+                pathWatcher = setInterval(async () => {
+                    const userCoords = window.userMarker?.getLatLng();
+                    
+                    if (!userMarker || isUpdatingPath) {
+                        return;
+                    }
+
+                    isUpdatingPath = true;
+
+                    try {
+                        const success = await window.displayPath(
+                            [userCoords.lng, userCoords.lat],
+                            [toCoord.lng, toCoord.lat]
+                        );
+                        
+                        if (!success) {
+                            console.warn("Could not update the route");
+                        }
+                    }
+                    finally {
+                        isUpdatingPath = false;
+                    }
+                }, 5000); // Updates path traces every 5 seconds
+            }
+
+            window.startLivePathTracing = startLivePathTracing;
+
+            function stopLivePathTracing() {
+                clearInterval(pathWatcher);
+                pathWatcher = null;
+            }
+
+            window.stopLivePathTracing = stopLivePathTracing;
+
+            function isInsideCampus(coords) {
+                const userLocation = L.latLng(
+                    coords[0], // Latitude
+                    coords[1] // Longitude
+                );
+
+                return window.campusBounds.contains(userLocation);
+            }
+
+            function displayLocation(latitude, longitude) {
+                const userLatLng = [latitude, longitude];
+
+                // Checks whether the user is in the campus or not
+                if (!isInsideCampus(userLatLng)) {
+                    window.showStatus("You are outside the campus map. Navigation is unavailable.", 3000, true);
+                    return false;
+                }
+
+                if (userMarker) {
+                    userMarker.setLatLng(userLatLng);
+                }
+                else {
+                    userMarker = L.circleMarker(userLatLng, {
+                        radius: 9,
+                        color: "#ffffff",
+                        weight: 3,
+                        fillColor: "#2563eb",
+                        fillOpacity: 1
+                    }).addTo(window.map);
+
+                    userMarker.bindPopup("You are around here!");
+
+                    window.userMarker = userMarker;
+                }
+
+                window.showStatus("Location found!");
+                window.map.flyTo(userLatLng, 20);
+                
+                startLiveLocation();
+
+                return true;
+            }
+
+            const getUserCoord = () => {
+                return new Promise((resolve, reject) => {
+                    if (!navigator.geolocation) {
+                        reject(new Error("Your browser does not support geolocation."));
+                        return;
+                    }
+
+                    navigator.geolocation.getCurrentPosition(resolve, reject, {
+                        enableHighAccuracy: true,
+                        timeout: 30000,
+                        maximumAge: 60000
+                    });
+                });
+            }
+
+            async function getCurrentLocation() {
+                try {
+                    stopLiveLocation();
+
+                    const position = await getUserCoord();
+
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+
+                    const insideCampus = displayLocation(latitude, longitude);
+
+                    return insideCampus;
+                }
+                catch (error) {
+                    console.log(error);
+                    window.showStatus("Unable to get your location. Please allow location access.", 5000, true);
+                    return false;
+                }
+            }
+
+            window.getCurrentLocation = getCurrentLocation;
+        
+            const locateButton = L.easyButton("fa fa-map-marker", () => {
+                getCurrentLocation();
+
+                window.showStatus("Pinpointing your location...", 0);
+            }).addTo(map);
+            locateButton.setPosition("topright");
+            locateButton.button.title = "Show my location";
+            locateButton.button.setAttribute("aria-label", "Show my location");
+        </script>
+
+        <!--Direction Path Shower-->
+        <script>
+            const showDirection = L.easyButton("fa fa-arrows", () => {
+                window.directionPanel.style.display = "flex";
+            }).addTo(map);
+            showDirection.setPosition("topright");
+            showDirection.button.title = "Get directions";
+            showDirection.button.setAttribute("aria-label", "Get directions");
+
+            async function showRoute() {
+                window.showStatus("Calculating route...", 0);
+
+                const fromLocation = document.getElementById("from-location").value;
+                const toLocation = document.getElementById("to-location").value;
+
+                if (fromLocation == toLocation) {
+                    window.showStatus("Pick two different places for your route.", 5000, true);
+                    return;
+                }
+
+                let toCoords = window.buildingsEntranceCoord[toLocation] || window.buildingsCenterCoord[toLocation];
+
+                if (!toCoords) {
+                    window.showStatus("Destination not found.", 5000, true);
+                    return;
+                }
+
+                let fromCoords = window.buildingsCenterCoord[fromLocation];
+
+                // User location
+                if (!fromCoords) {
+                    const locationFound = await window.getCurrentLocation();
+
+                    if (!locationFound) {
+                        return;
+                    }
+
+                    const userCoords = window.userMarker.getLatLng();
+
+                    fromCoords = {
+                        lat: userCoords.lat,
+                        lng: userCoords.lng
+                    }
+                }
+
+                const routeFound = await window.displayPath(
+                    [fromCoords.lng, fromCoords.lat],
+                    [toCoords.lng, toCoords.lat]
+                );
+                
+                if (!routeFound) {
+                    window.showStatus("Unable to find a route", true);
+                    return;
+                }
+
+                window.map.flyTo([fromCoords.lat, fromCoords.lng], 20);
+
+                showStatus("Route found!");
+
+                window.startLivePathTracing(toCoords);
+
+                window.directionPanel.style.display = "none";
+            }
+        </script>
+        
+        <!-- Bottom Sheet -->
+        <script>
+            const sheet = document.getElementById("sheet");
+            const handle = document.getElementById("handle");
+            let offsetY;
+            let dragging = false;
+              
+            const snap = {
+                top: 15,
+                middle: 50,
+                bottom: 90
+            };
+              
+            function nearestSnap(pos) {
+                const distance = {
+                    "top": Math.abs(snap.top - pos),
+                    "middle": Math.abs(snap.middle - pos),
+                    "bottom": Math.abs(snap.bottom - pos)
+                }
+                
+                return Object.keys(distance).reduce((closest, key) => {
+                    return distance[key] < distance[closest] ? key : closest;
+                });
+            }
+              
+            function pxToVh(px) {
+                return px * 100 / window.innerHeight;
+            }
+            
+            // Mobile
+            const drag = (event) => {
+                const touch = event.touches[0]; // position of touch
+                sheet.style.top = `${touch.clientY - offsetY}px`;
+            }
+            
+            handle.addEventListener("touchstart", event => {
+                const touch = event.touches[0];
+                offsetY = touch.clientY - sheet.offsetTop;
+                dragging = true;
+                document.addEventListener("touchmove", drag);
+            });
+              
+            document.addEventListener("touchend", () => {
+                if (!dragging) {
+                    return;
+                }
+
+                dragging = false;
+                document.removeEventListener("touchmove", drag);
+                
+                sheet.style.transition = "top 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)";
+                setTimeout(() => { sheet.style.transition = "none" }, 300);
+
+                // Snap
+                const sheetPosY = pxToVh(sheet.getBoundingClientRect().top);
+                sheet.style.top = snap[nearestSnap(sheetPosY)] + "vh";
+            });
+
+            // PC
+            const mouseDrag = (event) => {
+                sheet.style.top = `${event.clientY - offsetY}px`;
+            }
+
+            handle.addEventListener("mousedown", event => {
+                offsetY = event.clientY - sheet.offsetTop;
+                dragging = true;
+                document.addEventListener("mousemove", mouseDrag);
+            });
+              
+            document.addEventListener("mouseup", () => {
+                if (!dragging) {
+                    return;
+                }
+
+                dragging = false;
+                document.removeEventListener("mousemove", mouseDrag);
+                
+                sheet.style.transition = "top 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)";
+                setTimeout(() => { sheet.style.transition = "none" }, 300);
+
+                // Snap
+                const sheetPosY = pxToVh(sheet.getBoundingClientRect().top);
+                sheet.style.top = snap[nearestSnap(sheetPosY)] + "vh";
+            });
+        </script>
+
+        <!--UI Wiring-->
+        <script>
+            // Open the list when the search box gets focus, Enter searches, Escape closes
+            searchbox.addEventListener("focus", () => {
+                if (!window.searchBoxIsOpen) {
+                    searchbox.dispatchEvent(new Event("click"));
+                }
+
+                searchbox.dispatchEvent(new Event("input"));
+            });
+
+            searchbox.addEventListener("keydown", event => {
+                if (event.key == "Enter") searchbutton.click();
+            });
+
+            document.addEventListener("keydown", event => {
+                if (event.key == "Escape") {
+                    returnbutton.click();
+                    window.directionPanel.style.display = "none";
+                }
+            });
+
+            // "Directions" in the building sheet pre-fills the destination
+            document.getElementById("sheet-directions").addEventListener("click", () => {
+                const name = document.getElementById("target-location-name").textContent;
+                const to = document.getElementById("to-location");
+
+                if (Array.from(to.options).some(option => option.value == name)) {
+                    to.value = name;
+                }
+
+                window.directionPanel.style.display = "flex";
+            });
+        </script>
+    </body>
+</html>

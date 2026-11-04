@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 2792"
+   width="1200"
+   height="2792"
+   version="1.1"
+   id="svg106"
+   sodipodi:docname="map_v2.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:c2pa="http://c2pa.org/manifest">
+  <defs
+     id="defs106">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern2"
+       patternTransform="scale(2)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern1"
+       patternTransform="matrix(1.8126156,0.84523653,-0.84523653,1.8126156,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern139"
+       patternTransform="matrix(1.8126156,0.84523653,-0.84523653,1.8126156,2.1e-6,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern138"
+       patternTransform="matrix(1.8126156,0.84523653,-0.84523653,1.8126156,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern136"
+       preserveAspectRatio="xMidYMid"
+       id="pattern137"
+       patternTransform="matrix(2.8284271,2.8284271,-2.8284271,2.8284271,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="1"
+       patternTransform="translate(0,0) scale(2,2)"
+       preserveAspectRatio="xMidYMid"
+       id="pattern136"
+       style="fill:#86c597"
+       inkscape:stockid="Stripes 06 (1:5)"
+       inkscape:isstock="true"
+       inkscape:label="Stripes 06 (1:5)">
+      <rect
+         style="stroke:none"
+         x="0"
+         y="-0.5"
+         width="1"
+         height="2"
+         id="rect135" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern110"
+       patternTransform="scale(2)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern109"
+       patternTransform="matrix(1.8126154,0.84523644,-0.84523644,1.8126154,3e-6,-2.1999998e-6)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern103"
+       patternTransform="matrix(1.8126156,0.84523653,-0.84523653,1.8126156,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern102"
+       patternTransform="matrix(1.8126156,0.84523653,-0.84523653,1.8126156,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern101"
+       patternTransform="scale(2)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern100"
+       patternTransform="matrix(1.8126154,0.84523644,-0.84523644,1.8126154,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern97"
+       patternTransform="matrix(1.8126156,0.84523653,-0.84523653,1.8126156,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern96"
+       patternTransform="matrix(1.8126156,0.84523653,-0.84523653,1.8126156,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern95"
+       patternTransform="matrix(1.8126156,0.84523653,-0.84523653,1.8126156,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern94"
+       patternTransform="matrix(1.8126156,0.84523653,-0.84523653,1.8126156,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern93"
+       patternTransform="matrix(1.8126156,0.84523653,-0.84523653,1.8126156,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern92"
+       patternTransform="matrix(1.8126156,0.84523653,-0.84523653,1.8126156,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern91"
+       patternTransform="matrix(1.8126156,0.84523653,-0.84523653,1.8126156,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern90"
+       patternTransform="matrix(1.8126156,0.84523653,-0.84523653,1.8126156,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern89"
+       patternTransform="matrix(1.8126155,0.84523648,-0.84523648,1.8126155,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="1"
+       patternTransform="translate(0,0) scale(2,2)"
+       preserveAspectRatio="xMidYMid"
+       id="Strips1_5"
+       style="fill:#c4d0bd"
+       inkscape:stockid="Stripes 06 (1:5)"
+       inkscape:isstock="true"
+       inkscape:label="Stripes 06 (1:5)">
+      <rect
+         style="stroke:none"
+         x="0"
+         y="-0.5"
+         width="1"
+         height="2"
+         id="rect164" />
+    </pattern>
+  </defs>
+  <sodipodi:namedview
+     id="namedview106"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.489179"
+     inkscape:cx="388.80483"
+     inkscape:cy="2433.2198"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     showgrid="false" />
+  <metadata
+     id="metadata1">
+    <c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTowMzQ3ZjlmNS0xYmFkLTQ5YTUtYjczZi00NjUzZWFlNDgwZGYAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaAzoHmVLgMJ0uf3PiTvDuPwAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDphMTRmNGE3Zi02YzU0LTQwMjUtYjMzMi0wNGUyZDc1YjhjZTBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo1h/2cJ1tNBlMRB2DZ+iqDwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggE4ppNptfj/3ME6k/pts+cmdSWDl89enfbY6YlWHL4gukZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaAsjsRFs2w9kafOTeKCfOAkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCDWlF5KcDjG4W0yTw5B+8MnaJNAfRuIL7i71CnORZoymWRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiaZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjAzNDdmOWY1LTFiYWQtNDlhNS1iNzNmLTQ2NTNlYWU0ODBkZi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjYwZTUxMzE3LWFlNDctNDlkMi1iMWM2LTRjMGEwYjZmMWY5M3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCATimk2m1+P/cwTqT+m2z5yZ1JYOXz16d9tjpiVYcviC6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggOVj5eszO+wEfwsdJOh7lAsmWeWZFybhF7aFMR6F3lB6iY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggDdakNuIusnTdibnF0rhtlCWlA73qh3fVlxxqfH8KRTx0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQLEINZPoXJAutwJvB0xLyj69HcTGkqs9Dobn/bsXR+PFnACyzUDJfBxvtlCovdBbUDPZ5Hvqo7BXOvMopXGtK3E=</c2pa:manifest>
+  </metadata>
+  <style
+     id="style1">
+.area{fill:#e4efd8;stroke:#a9c28f;stroke-width:1}
+.oval{fill:#cfe5b8;stroke:#7fa05c;stroke-width:1.5}
+.bld{fill:#d9c9b0;stroke:#6b5a3e;stroke-width:1}
+.bld:hover{fill:#f0b429}
+.road{fill:none;stroke:#9a9a9a;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.path,.footway{stroke:#b5835a;stroke-width:1.5;stroke-dasharray:4 3}
+.pt{fill:#d33;stroke:#fff;stroke-width:1.5}
+text{font:10px sans-serif;fill:#222;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:2.5px;pointer-events:none}
+</style>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="paths"
+     style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-opacity:1;stroke-width:18;stroke-dasharray:none">
+    <path
+       class="road service"
+       d="m 463.7,881.7 -23.1,95.4 -53.7,254.7 -13.4,63.4 -43.5,205.9 -68.7,323.7 -57.9,272.2 -12.9,60.5 -47.3,247.5 -3.7,33.6 4.8,31.5 12.9,29.7 14.5,26.4 23.1,24.1 19.8,14.6 17.7,12.3 13.5,6.2 -2.2,18.5 -8.6,32 -12.9,57.2 -15,56.1"
+       id="path28"
+       style="stroke-width:18;stroke-dasharray:none;fill:none;fill-opacity:1;stroke:#9fbf95;stroke-opacity:1" />
+    <path
+       class="road service"
+       d="m 766.9,170.3 161,43.2 27.9,13.4 1.1,47.2 -88,396.1 -58.5,310.8"
+       id="path29"
+       style="stroke-width:18;stroke-dasharray:none;fill:none;fill-opacity:1;stroke:#9fbf95;stroke-opacity:1" />
+    <path
+       class="road service"
+       d="M 810.4,981 502.3,893.5 463.7,881.7"
+       id="path30"
+       style="stroke-width:18;stroke-dasharray:none;fill:none;fill-opacity:1;stroke:#9fbf95;stroke-opacity:1" />
+    <path
+       class="road service"
+       d="m 463.7,881.7 103.6,-248"
+       id="path31"
+       style="fill:none;fill-opacity:1;stroke-width:18;stroke-dasharray:none;stroke:#9fbf95;stroke-opacity:1" />
+    <path
+       class="road service"
+       d="m 749.2,1244.7 58,-246.3 3.2,-17.4"
+       id="path32"
+       style="stroke-width:18;stroke-dasharray:none;fill:none;fill-opacity:1;stroke:#9fbf95;stroke-opacity:1" />
+    <path
+       class="road service"
+       d="m 276.4,2762.9 10.2,-57.8 13.9,-60.6 5.9,-38.7 3.2,-11.2 12.4,-3.4 49.9,-13.4 25.8,-10.1 26.3,-14.6 18.2,-15.7 18.8,-23 12.9,-31.4 17.7,-65.1 23.1,-117.8 32.2,-145.4 50.4,-228.3 27.9,-126.3 54.8,-244 58.5,-263.2 10.7,-48.2"
+       id="path33"
+       style="stroke-width:18;stroke-dasharray:none;fill:none;fill-opacity:1;stroke:#9fbf95;stroke-opacity:1" />
+    <path
+       class="road path"
+       d="M 316.6,2412.3 222.1,2344.9 278,2110.4 203.4,2097"
+       id="path34"
+       style="fill:none;fill-opacity:1;stroke-dasharray:none;stroke-width:18;stroke:#9fbf95;stroke-opacity:1" />
+    <path
+       class="road path"
+       d="m 386.9,1231.8 351.6,61.1"
+       id="path35"
+       style="fill:none;fill-opacity:1;stroke-dasharray:none;stroke-width:18;stroke:#9fbf95;stroke-opacity:1" />
+    <path
+       class="road path"
+       d="m 597.3,1926.4 -336,-101.6"
+       id="path36"
+       style="fill:none;fill-opacity:1;stroke-dasharray:none;stroke-width:18;stroke:#9fbf95;stroke-opacity:1" />
+    <path
+       class="road path"
+       d="m 330,1501.1 350,55"
+       id="path37"
+       style="fill:none;fill-opacity:1;stroke-dasharray:none;stroke-width:18;stroke:#9fbf95;stroke-opacity:1" />
+    <path
+       class="road footway"
+       d="M 567.3,633.7 711.1,196.6 766.9,170.3"
+       id="path38"
+       style="fill:none;fill-opacity:1;stroke-width:18;stroke-dasharray:none;stroke-dashoffset:0;stroke:#9fbf95;stroke-opacity:1" />
+    <path
+       class="road path"
+       d="m 316.6,2412.3 91.3,2.8 77.8,-270.5 61.2,10.1"
+       id="path39"
+       style="fill:none;fill-opacity:1;stroke-dasharray:none;stroke-width:18;stroke:#9fbf95;stroke-opacity:1" />
+    <path
+       class="road other"
+       d="m 274.7,2588.4 41.9,-176.1"
+       id="path41"
+       style="stroke-width:18;stroke-dasharray:none;fill:none;fill-opacity:1;stroke:#9fbf95;stroke-opacity:1" />
+    <path
+       class="road other"
+       d="m 245.2,2583.4 64.4,11.2"
+       id="path40"
+       style="display:inline;stroke-width:18;stroke-dasharray:none;fill:none;stroke:#9fbf95;stroke-opacity:1;fill-opacity:1" />
+    <g
+       inkscape:groupmode="layer"
+       id="layer4-9"
+       inkscape:label="paths"
+       style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-dasharray:none;stroke-opacity:1">
+      <path
+         class="road service"
+         d="m 463.7,881.7 -23.1,95.4 -53.7,254.7 -13.4,63.4 -43.5,205.9 -68.7,323.7 -57.9,272.2 -12.9,60.5 -47.3,247.5 -3.7,33.6 4.8,31.5 12.9,29.7 14.5,26.4 23.1,24.1 19.8,14.6 17.7,12.3 13.5,6.2 -2.2,18.5 -8.6,32 -12.9,57.2 -15,56.1"
+         id="path28-1"
+         style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road service"
+         d="m 766.9,170.3 161,43.2 27.9,13.4 1.1,47.2 -88,396.1 -58.5,310.8"
+         id="path29-3"
+         style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road service"
+         d="M 810.4,981 502.3,893.5 463.7,881.7"
+         id="path30-5"
+         style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road service"
+         d="m 463.7,881.7 103.6,-248"
+         id="path31-9"
+         style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road service"
+         d="m 749.2,1244.7 58,-246.3 3.2,-17.4"
+         id="path32-8"
+         style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road service"
+         d="m 276.4,2762.9 10.2,-57.8 13.9,-60.6 5.9,-38.7 3.2,-11.2 12.4,-3.4 49.9,-13.4 25.8,-10.1 26.3,-14.6 18.2,-15.7 18.8,-23 12.9,-31.4 17.7,-65.1 23.1,-117.8 32.2,-145.4 50.4,-228.3 27.9,-126.3 54.8,-244 58.5,-263.2 10.7,-48.2"
+         id="path33-4"
+         style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road path"
+         d="M 316.6,2412.3 222.1,2344.9 278,2110.4 203.4,2097"
+         id="path34-0"
+         style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road path"
+         d="m 386.9,1231.8 351.6,61.1"
+         id="path35-7"
+         style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road path"
+         d="m 597.3,1926.4 -336,-101.6"
+         id="path36-6"
+         style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road path"
+         d="m 330,1501.1 350,55"
+         id="path37-3"
+         style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road footway"
+         d="M 567.3,633.7 711.1,196.6 766.9,170.3"
+         id="path38-6"
+         style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         class="road path"
+         d="m 316.6,2412.3 91.3,2.8 77.8,-270.5 61.2,10.1"
+         id="path39-1"
+         style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road other"
+         d="m 274.7,2588.4 41.9,-176.1"
+         id="path41-5"
+         style="fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road other"
+         d="m 245.2,2583.4 64.4,11.2"
+         id="path40-4"
+         style="display:inline;fill:none;fill-opacity:1;stroke:#9fbf95;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer4-0"
+       inkscape:label="paths"
+       style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-dasharray:none;stroke-opacity:1">
+      <path
+         class="road service"
+         d="m 463.7,881.7 -23.1,95.4 -53.7,254.7 -13.4,63.4 -43.5,205.9 -68.7,323.7 -57.9,272.2 -12.9,60.5 -47.3,247.5 -3.7,33.6 4.8,31.5 12.9,29.7 14.5,26.4 23.1,24.1 19.8,14.6 17.7,12.3 13.5,6.2 -2.2,18.5 -8.6,32 -12.9,57.2 -15,56.1"
+         id="path28-0"
+         style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road service"
+         d="m 766.9,170.3 161,43.2 27.9,13.4 1.1,47.2 -88,396.1 -58.5,310.8"
+         id="path29-1"
+         style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road service"
+         d="M 810.4,981 502.3,893.5 463.7,881.7"
+         id="path30-4"
+         style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road service"
+         d="m 463.7,881.7 103.6,-248"
+         id="path31-6"
+         style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road service"
+         d="m 749.2,1244.7 58,-246.3 3.2,-17.4"
+         id="path32-0"
+         style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road service"
+         d="m 276.4,2762.9 10.2,-57.8 13.9,-60.6 5.9,-38.7 3.2,-11.2 12.4,-3.4 49.9,-13.4 25.8,-10.1 26.3,-14.6 18.2,-15.7 18.8,-23 12.9,-31.4 17.7,-65.1 23.1,-117.8 32.2,-145.4 50.4,-228.3 27.9,-126.3 54.8,-244 58.5,-263.2 10.7,-48.2"
+         id="path33-7"
+         style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road path"
+         d="M 316.6,2412.3 222.1,2344.9 278,2110.4 203.4,2097"
+         id="path34-1"
+         style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road path"
+         d="m 386.9,1231.8 351.6,61.1"
+         id="path35-77"
+         style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road path"
+         d="m 597.3,1926.4 -336,-101.6"
+         id="path36-7"
+         style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road path"
+         d="m 330,1501.1 350,55"
+         id="path37-7"
+         style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road footway"
+         d="M 567.3,633.7 711.1,196.6 766.9,170.3"
+         id="path38-3"
+         style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         class="road path"
+         d="m 316.6,2412.3 91.3,2.8 77.8,-270.5 61.2,10.1"
+         id="path39-3"
+         style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road other"
+         d="m 274.7,2588.4 41.9,-176.1"
+         id="path41-59"
+         style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="road other"
+         d="m 245.2,2583.4 64.4,11.2"
+         id="path40-9"
+         style="display:inline;fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         inkscape:groupmode="layer"
+         id="layer4-9-8"
+         inkscape:label="paths"
+         style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-dasharray:none;stroke-opacity:1">
+        <path
+           class="road service"
+           d="m 463.7,881.7 -23.1,95.4 -53.7,254.7 -13.4,63.4 -43.5,205.9 -68.7,323.7 -57.9,272.2 -12.9,60.5 -47.3,247.5 -3.7,33.6 4.8,31.5 12.9,29.7 14.5,26.4 23.1,24.1 19.8,14.6 17.7,12.3 13.5,6.2 -2.2,18.5 -8.6,32 -12.9,57.2 -15,56.1"
+           id="path28-1-1"
+           style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           class="road service"
+           d="m 766.9,170.3 161,43.2 27.9,13.4 1.1,47.2 -88,396.1 -58.5,310.8"
+           id="path29-3-8"
+           style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           class="road service"
+           d="M 810.4,981 502.3,893.5 463.7,881.7"
+           id="path30-5-2"
+           style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           class="road service"
+           d="m 463.7,881.7 103.6,-248"
+           id="path31-9-6"
+           style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           class="road service"
+           d="m 749.2,1244.7 58,-246.3 3.2,-17.4"
+           id="path32-8-6"
+           style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           class="road service"
+           d="m 276.4,2762.9 10.2,-57.8 13.9,-60.6 5.9,-38.7 3.2,-11.2 12.4,-3.4 49.9,-13.4 25.8,-10.1 26.3,-14.6 18.2,-15.7 18.8,-23 12.9,-31.4 17.7,-65.1 23.1,-117.8 32.2,-145.4 50.4,-228.3 27.9,-126.3 54.8,-244 58.5,-263.2 10.7,-48.2"
+           id="path33-4-0"
+           style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           class="road path"
+           d="M 316.6,2412.3 222.1,2344.9 278,2110.4 203.4,2097"
+           id="path34-0-3"
+           style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           class="road path"
+           d="m 386.9,1231.8 351.6,61.1"
+           id="path35-7-8"
+           style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           class="road path"
+           d="m 597.3,1926.4 -336,-101.6"
+           id="path36-6-0"
+           style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           class="road path"
+           d="m 330,1501.1 350,55"
+           id="path37-3-1"
+           style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           class="road footway"
+           d="M 567.3,633.7 711.1,196.6 766.9,170.3"
+           id="path38-6-2"
+           style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           class="road path"
+           d="m 316.6,2412.3 91.3,2.8 77.8,-270.5 61.2,10.1"
+           id="path39-1-5"
+           style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           class="road other"
+           d="m 274.7,2588.4 41.9,-176.1"
+           id="path41-5-0"
+           style="fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           class="road other"
+           d="m 245.2,2583.4 64.4,11.2"
+           id="path40-4-9"
+           style="display:inline;fill:none;fill-opacity:1;stroke:#fbf8ec;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer4-0-7"
+         inkscape:label="paths"
+         style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0">
+        <path
+           class="road service"
+           d="m 463.7,881.7 -23.1,95.4 -53.7,254.7 -13.4,63.4 -43.5,205.9 -68.7,323.7 -57.9,272.2 -12.9,60.5 -47.3,247.5 -3.7,33.6 4.8,31.5 12.9,29.7 14.5,26.4 23.1,24.1 19.8,14.6 17.7,12.3 13.5,6.2 -2.2,18.5 -8.6,32 -12.9,57.2 -15,56.1"
+           id="path28-0-8"
+           style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+        <path
+           class="road service"
+           d="m 766.9,170.3 161,43.2 27.9,13.4 1.1,47.2 -88,396.1 -58.5,310.8"
+           id="path29-1-3"
+           style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+        <path
+           class="road service"
+           d="M 810.4,981 502.3,893.5 463.7,881.7"
+           id="path30-4-5"
+           style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+        <path
+           class="road service"
+           d="m 463.7,881.7 103.6,-248"
+           id="path31-6-1"
+           style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+        <path
+           class="road service"
+           d="m 749.2,1244.7 58,-246.3 3.2,-17.4"
+           id="path32-0-2"
+           style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+        <path
+           class="road service"
+           d="m 276.4,2762.9 10.2,-57.8 13.9,-60.6 5.9,-38.7 3.2,-11.2 12.4,-3.4 49.9,-13.4 25.8,-10.1 26.3,-14.6 18.2,-15.7 18.8,-23 12.9,-31.4 17.7,-65.1 23.1,-117.8 32.2,-145.4 50.4,-228.3 27.9,-126.3 54.8,-244 58.5,-263.2 10.7,-48.2"
+           id="path33-7-0"
+           style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+        <path
+           class="road path"
+           d="M 316.6,2412.3 222.1,2344.9 278,2110.4 203.4,2097"
+           id="path34-1-1"
+           style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+        <path
+           class="road path"
+           d="m 386.9,1231.8 351.6,61.1"
+           id="path35-77-6"
+           style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+        <path
+           class="road path"
+           d="m 597.3,1926.4 -336,-101.6"
+           id="path36-7-4"
+           style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+        <path
+           class="road path"
+           d="m 330,1501.1 350,55"
+           id="path37-7-0"
+           style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+        <path
+           class="road footway"
+           d="M 567.3,633.7 711.1,196.6 766.9,170.3"
+           id="path38-3-6"
+           style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           class="road path"
+           d="m 316.6,2412.3 91.3,2.8 77.8,-270.5 61.2,10.1"
+           id="path39-3-1"
+           style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+        <path
+           class="road other"
+           d="m 274.7,2588.4 41.9,-176.1"
+           id="path41-59-8"
+           style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+        <path
+           class="road other"
+           d="m 245.2,2583.4 64.4,11.2"
+           id="path40-9-9"
+           style="display:inline;fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+        <g
+           inkscape:groupmode="layer"
+           id="layer4-9-8-8"
+           inkscape:label="paths"
+           style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0">
+          <path
+             class="road service"
+             d="m 463.7,881.7 -23.1,95.4 -53.7,254.7 -13.4,63.4 -43.5,205.9 -68.7,323.7 -57.9,272.2 -12.9,60.5 -47.3,247.5 -3.7,33.6 4.8,31.5 12.9,29.7 14.5,26.4 23.1,24.1 19.8,14.6 17.7,12.3 13.5,6.2 -2.2,18.5 -8.6,32 -12.9,57.2 -15,56.1"
+             id="path28-1-1-4"
+             style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+          <path
+             class="road service"
+             d="m 766.9,170.3 161,43.2 27.9,13.4 1.1,47.2 -88,396.1 -58.5,310.8"
+             id="path29-3-8-1"
+             style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+          <path
+             class="road service"
+             d="M 810.4,981 502.3,893.5 463.7,881.7"
+             id="path30-5-2-4"
+             style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+          <path
+             class="road service"
+             d="m 463.7,881.7 103.6,-248"
+             id="path31-9-6-3"
+             style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+          <path
+             class="road service"
+             d="m 749.2,1244.7 58,-246.3 3.2,-17.4"
+             id="path32-8-6-9"
+             style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+          <path
+             class="road service"
+             d="m 276.4,2762.9 10.2,-57.8 13.9,-60.6 5.9,-38.7 3.2,-11.2 12.4,-3.4 49.9,-13.4 25.8,-10.1 26.3,-14.6 18.2,-15.7 18.8,-23 12.9,-31.4 17.7,-65.1 23.1,-117.8 32.2,-145.4 50.4,-228.3 27.9,-126.3 54.8,-244 58.5,-263.2 10.7,-48.2"
+             id="path33-4-0-8"
+             style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+          <path
+             class="road path"
+             d="M 316.6,2412.3 222.1,2344.9 278,2110.4 203.4,2097"
+             id="path34-0-3-8"
+             style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+          <path
+             class="road path"
+             d="m 386.9,1231.8 351.6,61.1"
+             id="path35-7-8-0"
+             style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+          <path
+             class="road path"
+             d="m 597.3,1926.4 -336,-101.6"
+             id="path36-6-0-8"
+             style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+          <path
+             class="road path"
+             d="m 330,1501.1 350,55"
+             id="path37-3-1-7"
+             style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+          <path
+             class="road footway"
+             d="M 567.3,633.7 711.1,196.6 766.9,170.3"
+             id="path38-6-2-7"
+             style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-dashoffset:0;stroke-opacity:1" />
+          <path
+             class="road path"
+             d="m 316.6,2412.3 91.3,2.8 77.8,-270.5 61.2,10.1"
+             id="path39-1-5-8"
+             style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+          <path
+             class="road other"
+             d="m 274.7,2588.4 41.9,-176.1"
+             id="path41-5-0-3"
+             style="fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+          <path
+             class="road other"
+             d="m 245.2,2583.4 64.4,11.2"
+             id="path40-4-9-8"
+             style="display:inline;fill:none;fill-opacity:1;stroke:#e4dcc0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8;stroke-opacity:1;stroke-dashoffset:0" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="polygons"
+     style="display:inline;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+    <path
+       class="oval"
+       fill-rule="evenodd"
+       d="m 404.1,2020.1 42.9,2.2 38.1,-5.6 32.2,-20.2 31.7,-24.7 22.6,-44.9 10.2,-61.7 11.8,-80.8 10.7,-65 24.1,-120.7 21,-106 22,-106.6 8.6,-61.2 -5.4,-21.3 -19.3,-24.1 -14,-21.9 -22,-8.4 -58.5,-11.8 -34.9,-4.5 -21.4,0.6 -29,5 -29.5,18 -16.1,25.2 -15.1,50 -30.6,126.2 -32.2,151.5 -34.3,132.4 -18.8,125.7 -1.1,47.1 21.5,50.5 39.2,35.3 z"
+       id="path1"
+       style="fill:#d9c79a;stroke:#8f7f4f;stroke-opacity:1;stroke-width:3;stroke-dasharray:none;fill-opacity:1">
+      <title
+         id="title1">ISU Oval</title>
+    </path>
+    <path
+       class="oval"
+       fill-rule="evenodd"
+       d="m 419.1564,1952.6853 35.28361,1.8095 31.33577,-4.6057 26.48324,-16.6137 26.07202,-20.3149 18.58763,-36.9284 8.38911,-50.7459 9.70504,-66.4549 8.80034,-53.46 19.82131,-99.271 17.27169,-87.1809 18.09415,-87.6744 7.07318,-50.3346 -4.44132,-17.5184 -15.87349,-19.8214 -11.51446,-18.0119 -18.09415,-6.9087 -48.11398,-9.705 -28.70389,-3.701 -17.60068,0.4934 -23.85137,4.1123 -24.26261,14.8043 -13.24164,20.7261 -12.41916,41.123 -25.1673,103.7947 -26.48326,124.6027 -28.21043,108.8939 -15.46226,103.3835 -0.9047,38.7379 17.68291,41.5342 32.24047,29.0329 z"
+       id="path1-2"
+       style="display:inline;fill:none;stroke:#ffffff;stroke-width:1.645;stroke-dasharray:6.57999992;stroke-opacity:1;stroke-dashoffset:0;stroke-miterlimit:4">
+      <title
+         id="title1-7">ISU Oval</title>
+    </path>
+    <path
+       class="oval"
+       fill-rule="evenodd"
+       d="m 435.44121,1875.0516 27.04581,1.387 24.01968,-3.5304 20.3001,-12.7348 19.98488,-15.5719 14.24791,-28.3066 6.43047,-38.8981 7.43916,-50.9393 6.74569,-40.9785 15.19355,-76.0939 13.2392,-66.8264 13.86963,-67.2047 5.42178,-38.5828 -3.40438,-13.4283 -12.16745,-15.1936 -8.82613,-13.8066 -13.86964,-5.2957 -36.88062,-7.4391 -22.00228,-2.8369 -13.49138,0.3782 -18.28269,3.1522 -18.59793,11.3478 -10.15005,15.8871 -9.51962,31.5219 -19.29139,79.5614 -20.30011,95.5112 -21.62403,83.47 -11.85223,79.2461 -0.69347,29.6936 13.55441,31.8371 24.71316,22.2545 z"
+       id="path1-2-5"
+       style="display:inline;fill:#7cbf8e;fill-opacity:1;stroke:#ffffff;stroke-width:1.261;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+      <title
+         id="title1-7-4"
+         style="fill:url(#pattern110)">ISU Oval</title>
+    </path>
+    <path
+       class="oval"
+       fill-rule="evenodd"
+       d="m 435.44121,1875.0516 27.04581,1.387 24.01968,-3.5304 20.3001,-12.7348 19.98488,-15.5719 14.24791,-28.3066 6.43047,-38.8981 7.43916,-50.9393 6.74569,-40.9785 15.19355,-76.0939 13.2392,-66.8264 13.86963,-67.2047 5.42178,-38.5828 -3.40438,-13.4283 -12.16745,-15.1936 -8.82613,-13.8066 -13.86964,-5.2957 -36.88062,-7.4391 -22.00228,-2.8369 -13.49138,0.3782 -18.28269,3.1522 -18.59793,11.3478 -10.15005,15.8871 -9.51962,31.5219 -19.29139,79.5614 -20.30011,95.5112 -21.62403,83.47 -11.85223,79.2461 -0.69347,29.6936 13.55441,31.8371 24.71316,22.2545 z"
+       id="path1-2-5-3"
+       style="display:inline;fill:url(#pattern137);fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+      <title
+         id="title1-7-4-4"
+         style="fill:url(#pattern137)">ISU Oval</title>
+    </path>
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 759.9,207.3 -1,27.5 40.2,2.2 1.1,-27.5 z"
+       id="path2"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 997.2,155.7 -4.3,37 71.4,7.9 4.3,-37.1 z"
+       id="path3"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 857.6,233.1 -5.3,24.1 44.5,8.4 5.4,-23.5 z"
+       id="path4"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 148.1,1609.4 -7.5,43.8 22,5 8,-44.3 z"
+       id="path5"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 167.4,1903.9 -0.5,10.7 36.5,3.9 1,-11.2 z"
+       id="path6"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 264,2591.8 -4.8,25.8 -3.2,19.7 23,3.3 8.1,-44.9 z"
+       id="path7"
+       style="fill:#c9d3c4;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 397.7,2609.2 -22.1,74.6 36,10.1 21.5,-74.6 z"
+       id="path8"
+       style="fill:#1f5d3a;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 582.3,2285.5 -10.2,33.6 -8.1,23.6 59.1,18.5 16.6,-55.5 z"
+       id="path10"
+       style="fill:#1f5d3a;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 244.2,2127.8 -6,26.9 21.5,5.7 6.5,-28.1 z"
+       id="path11"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#dfe7da;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 244.2,2127.8 -6,26.9 21.5,5.7 6.5,-28.1 z"
+       id="path11-8"
+       style="display:inline;fill:url(#pattern109);fill-opacity:1;stroke:#8da57a;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 431.5,2182.8 15,-52.2 -83.7,-19.6 -11.8,52.2 z"
+       id="path12"
+       style="fill:#8cc7a1;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 971.4,379 -9.6,44.9 18.2,3.9 10.2,-44.9 z"
+       id="path13"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 966.6,431.2 -9.1,38.1 18.7,3.4 8.1,-37.6 z"
+       id="path14"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 961.2,471.6 -3.7,14.5 15,5.1 4.8,-14.6 z"
+       id="path15"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 1008.4,341.4 -4.2,23.6 41.8,4.4 2.2,-24.6 z"
+       id="path16"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 1016,286.4 -5.4,35.4 33.8,6.7 5.4,-37.6 z"
+       id="path17"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 1053.5,301 -7.5,25.2 24.2,6.8 6.9,-25.8 z"
+       id="path18"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 1135.6,194.4 -22.5,69 36,11.2 20.9,-68.4 z"
+       id="path19"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 759.90001,207.3 -1,27.5 40.2,2.2 1.1,-27.5 z"
+       id="path2-1"
+       style="display:inline;fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 997.2,155.7 -4.3,37 71.4,7.9 4.3,-37.1 z"
+       id="path3-5"
+       style="display:inline;fill:url(#pattern97);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 857.60001,233.1 -5.3,24.1 44.5,8.4 5.4,-23.5 z"
+       id="path4-2"
+       style="display:inline;fill:url(#pattern96);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 971.4,379 -9.6,44.9 18.2,3.9 10.2,-44.9 z"
+       id="path13-7"
+       style="display:inline;fill:url(#pattern95);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 966.6,431.2 -9.1,38.1 18.7,3.4 8.1,-37.6 z"
+       id="path14-6"
+       style="display:inline;fill:url(#pattern94);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 961.2,471.6 -3.7,14.5 15,5.1 4.8,-14.6 z"
+       id="path15-1"
+       style="display:inline;fill:url(#pattern93);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 1008.4,341.4 -4.2,23.6 41.8,4.4 2.2,-24.6 z"
+       id="path16-4"
+       style="display:inline;fill:url(#pattern92);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 1016,286.4 -5.4,35.4 33.8,6.7 5.4,-37.6 z"
+       id="path17-2"
+       style="display:inline;fill:url(#pattern91);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 1053.5,301 -7.5,25.2 24.2,6.8 6.9,-25.8 z"
+       id="path18-3"
+       style="display:inline;fill:url(#pattern90);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 1135.6,194.4 -22.5,69 36,11.2 20.9,-68.4 z"
+       id="path19-2"
+       style="display:inline;fill:url(#pattern89);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 907.5,1243.6 -22.5,94.8 25.2,5 22.6,-94.8 z"
+       id="path20"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 91.7,2512.7 -3.7,27.5 25.2,2.8 3.2,-27.5 z"
+       id="path21"
+       style="fill:#c9d3c4;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 113.2,2559.8 -9.1,31.4 20.4,5.1 8.6,-30.9 z"
+       id="path22"
+       style="fill:#c9d3c4;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 99.2,2601.9 -9.1,40.4 38.1,8.4 7.5,-41.5 z"
+       id="path23"
+       style="fill:#c9d3c4;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 116.9,2654.6 -1.6,22.5 15.1,0.5 1,-21.8 z"
+       id="path24"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 881.8,1543.7 -4.9,38.2 37.6,5 4.9,-37.5 z"
+       id="path25"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 907.5,1243.6 -22.5,94.8 25.2,5 22.6,-94.8 z"
+       id="path20-1"
+       style="display:inline;fill:url(#pattern139);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 881.8,1543.7 -4.9,38.2 37.6,5 4.9,-37.5 z"
+       id="path25-3"
+       style="display:inline;fill:url(#pattern138);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="M 734.7,895.7 753,839.6 571,790.2 551.2,849.7 Z"
+       id="path26"
+       style="fill:#dfe7da;stroke:#0f2c1a;stroke-opacity:1;fill-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="M 720.8,50.2 725.6,36.7 707.3,30 701.4,44 Z"
+       id="path27"
+       style="fill:#c9d3c4;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none;fill-opacity:1" />
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 235.6,2160.4 -43,162.1 114.9,29.7 -7.5,29.2 40.8,10.7 6.9,-26.4 104.2,27.5 48.3,-185.2 -55.3,-14.5 -34.9,132.4 -147.6,-38.7 29.5,-112.3 z"
+       id="path42"
+       style="fill:#1f5d3a;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title41">Administration Building</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 718.6,64.2 -43.5,-12.9 -86.4,291.2 44,12.9 z"
+       id="path43"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title42">ISU Institute of Agriculture</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 1001.5,386.3 -72.5,284.4 37,9.6 72.5,-284.5 z"
+       id="path44"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title43">CCJE Building</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 856.6,981.6 24.1,5 24.2,5.6 63.3,-288.9 -28.5,-6.2 -20.3,-4.5 z"
+       id="path45"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title44">College of Arts &amp; Criminology</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 535.6,1020.3 177.1,35.9 13.4,-64.5 L 549.5,958 Z"
+       id="path46"
+       style="fill:#1f5d3a;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title45">Office</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 474.9,788.6 -23.6,-7.9 -22,-6.7 -40.8,127.3 16.1,5.1 29.6,9.5 z"
+       id="path47"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title46">Polytechnic room</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 474.9,1179.1 202.4,42 18.8,-76.3 17.1,-88.6 -208.7,-41.5 -28.5,-5.6 -28.4,143.6 30,6.2 z"
+       id="path48"
+       style="fill:#8cc7a1;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title47">ISU Gym</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 156.7,1685.7 57.9,9.5 56.9,-264.2 -50.4,-9 z"
+       id="path49"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title48">CCSICT Ramon Magsaysay Building</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 169.5,1703.1 -62.2,-12.9 -42.4,209.8 62.2,12.4 z"
+       id="path50"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title49">College of Law</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 630.6,2091.9 -45.6,182.3 63.3,15.8 45.6,-182.4 z"
+       id="path51"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title50">College for Elementary Education Building</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 765.8,1365.3 -35.4,129.6 194.9,50.5 38.1,-133.5 z"
+       id="path52"
+       style="fill:#aade87;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 830.8,1132.5 -20.4,75.7 112.2,24.2 4.8,-14.6 10.7,-32.6 6.5,-20.2 -4.3,-1.7 z"
+       id="path53"
+       style="fill:#e6d98a;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title52">Hostel</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 776.6,1679.5 -32.2,5.1 32.2,-138.6 -56.4,-10.7 -34.3,152.6 23.6,6.8 -5.4,46 55.8,14.6 z"
+       id="path54"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title53">EDUC Faculty</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 663.9,1750.2 -13.4,60 89.6,19.7 -26.3,118.9 -89.6,-20.2 -14,61.2 153,33.7 53.1,-239.1 z"
+       id="path55"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title54">CBM</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 505,536.1 -51.5,144.7 47.2,16.3 7,-19.6 13.9,5.6 15.1,-44.9 6.9,3.4 26.9,-85.9 z"
+       id="path56"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title55">Politechic workshop</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 508.2,705 -67.6,-23 -27.9,84.7 68.7,19.6 z"
+       id="path57"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title56">Bamboo laboratory</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 392.3,905.3 -9.1,29.1 24.7,6.2 11.8,-25.2 z"
+       id="path58"
+       style="fill:#c9d3c4;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title57">Comfort room</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 381,942.3 -20.4,102.7 46.7,15.1 13.4,-69 12.4,1.1 2.7,-37.6 z"
+       id="path59"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title58">Polytechnic Room3</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 402.5,1071.3 -56.4,-14.6 -30,82.5 65.5,26.4 z"
+       id="path60"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title59">Polytechnix Faculty</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 107.8,1664.4 -4.8,21.3 15.6,3.9 5.3,-21.3 z"
+       id="path61"
+       style="fill:#c9d3c4;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title60">Comfort room</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 349.9,1157.7 -46.2,-10.1 -55.8,255.3 46.7,10.1 z"
+       id="path62"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title61">CCSICT Building</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 221.1,1335.6 -16.1,49.4 20.4,10.6 10.2,-56.1 z"
+       id="path63"
+       style="fill:#1f5d3a;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title62">CCSCT SBO Office3</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 221.6,1401.8 -20.9,-3.9 -9.7,21.8 25.2,6.8 z"
+       id="path64"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title63">Generator shed</title>
+    </path>
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 148.1,1609.3999 -7.5,43.8 22,5 8,-44.3 z"
+       id="path5-1"
+       style="display:inline;fill:url(#pattern103);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 167.4,1903.9 -0.5,10.7 36.5,3.9 1,-11.2 z"
+       id="path6-6"
+       style="display:inline;fill:url(#pattern102);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 116.9,2654.5999 -1.6,22.5 15.1,0.5 1,-21.8 z"
+       id="path24-8"
+       style="display:inline;fill:url(#pattern101);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 734.70005,895.69993 18.3,-56.1 -182.00005,-49.4 -19.8,59.5 z"
+       id="path26-5"
+       style="display:inline;fill:url(#pattern100);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 221.6,1401.7999 -20.9,-3.9 -9.7,21.8 25.2,6.8 z"
+       id="path64-7"
+       style="display:inline;fill:#c9d3c4;fill-opacity:1;stroke:#0f2c1a;stroke-width:2;stroke-opacity:1;stroke-dasharray:none">
+      <title
+         id="title63-6"
+         style="fill:url(#pattern99)">Generator shed</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 345.6,2169.9 -13.4,52.7 88.5,21.9 12.9,-52.7 z"
+       id="path65"
+       style="fill:#aade87;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title64">Clinic</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 651.5,2010.5 -16.1,62.9 40.8,9 17.2,-58.9 z"
+       id="path66"
+       style="fill:#c9d3c4;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title65">Comfort room</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 58.4,1925.8 -28.4,119 89.6,21.9 28.5,-119 z"
+       id="path67"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title66">Library</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 955.3,1127.4 -15,35.9 98.2,19.1 15,-34.8 z"
+       id="path68"
+       style="fill:#e6d98a;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title67">Hostel</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 1033.7,1208.8 -95.6,-23.6 -10.7,32.6 96.1,23 z"
+       id="path69"
+       style="fill:#e6d98a;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title68">Hostel</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 785.2,1220 -21.5,104.4 77.3,12.3 22.5,-102.7 z"
+       id="path70"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title69">Polytechnic Room</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 969.3,1235.2 -34.4,135.2 43.5,12.9 42.4,-135.2 z"
+       id="path71"
+       style="fill:#dfe7da;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title70"
+         style="fill:url(#pattern1)">Room</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 969.30002,1235.2 -34.4,135.2 43.5,12.9 42.39998,-135.2 z"
+       id="path71-9"
+       style="display:inline;fill:url(#pattern2);fill-opacity:1;stroke:#8da587;stroke-width:2;stroke-dasharray:none;stroke-opacity:1">
+      <title
+         id="title70-4"
+         style="fill:url(#pattern2)">Room</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 1054.6,1145.4 25.8,-77.4 -24.2,-9 3.8,-11.8 -24.2,-9 -7,13.5 -18.2,-6.7 -18.3,61.7 -21.4,-3.4 -4.9,19.1 z"
+       id="path72"
+       style="fill:#1f5d3a;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title71">NSTP OFFICE</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 937.1,1030.9 -19.4,84.2 47.3,10.7 17.7,-83.6 z"
+       id="path73"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title72">CCJE Room</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 932.2,1016.3 -49.9,-11.7 -32.7,99.8 56.9,16.3 z"
+       id="path74"
+       style="fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title73">CCJE Room</title>
+    </path>
+    <path
+       class="bld"
+       fill-rule="evenodd"
+       d="m 489.4,1185.8 -4.3,32.5 182,39.3 10.2,-36.5 z"
+       id="path75"
+       style="fill:#1f5d3a;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none">
+      <title
+         id="title74">Office</title>
+    </path>
+    <circle
+       class="pt"
+       cx="300.5"
+       cy="2644.5"
+       r="4"
+       id="circle75"
+       style="fill:#aade87;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <circle
+       class="pt"
+       cx="235"
+       cy="2633.8999"
+       r="4"
+       id="circle76"
+       style="fill:#aade87;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+    <path
+       class="area"
+       fill-rule="evenodd"
+       d="m 531.3,2723.1 113.2,-340 -98.2,-30.3 -78.9,258.6 -17.1,-4.4 -23.7,90.3 z"
+       id="path9"
+       style="display:inline;fill:#52a36b;fill-opacity:1;stroke:#0f2c1a;stroke-opacity:1;stroke-width:2;stroke-dasharray:none" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="texts"
+     style="display:inline">
+    <text
+       x="579.90729"
+       y="1221.871"
+       id="text106"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Office</text>
+    <text
+       x="950.34601"
+       y="1079.6536"
+       id="text104"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">CCJE Building 1</text>
+    <text
+       x="891.04724"
+       y="1066.2916"
+       id="text105"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Polytechnic Building 1</text>
+    <text
+       x="1022.9995"
+       y="1095.4246"
+       id="text103"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">NSTP Office</text>
+    <text
+       x="489.02847"
+       y="1631.3241"
+       id="text102"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">ISU Oval</text>
+    <text
+       x="813.54602"
+       y="1281.1379"
+       id="text100"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">New Food Laboratory</text>
+    <text
+       x="220.37895"
+       y="1369.4226"
+       id="text94"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">CCSCT SBO Office</text>
+    <text
+       x="206.16763"
+       y="1416.0031"
+       id="text94-9"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;display:inline;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke">Generator Shed</text>
+    <text
+       x="380.72311"
+       y="2208.6672"
+       id="text95"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Clinic</text>
+    <text
+       x="398.68176"
+       y="2149.5674"
+       id="text95-2"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke">Stage</text>
+    <text
+       x="664.55396"
+       y="2050.1753"
+       id="text96"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Comfort Room</text>
+    <text
+       x="88.710854"
+       y="1999.043"
+       id="text97"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Library</text>
+    <text
+       x="996.87036"
+       y="1158.6206"
+       id="text98"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Hostel</text>
+    <text
+       x="980.51544"
+       y="1216.722"
+       id="text99"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Hostel</text>
+    <text
+       x="299.07031"
+       y="1284.3643"
+       id="text93"
+       inkscape:label="text93"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">CCSICT IT Building</text>
+    <text
+       x="358.93945"
+       y="1113.9862"
+       id="text92"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Polytechnic Faculty</text>
+    <text
+       x="398.06393"
+       y="1004.0176"
+       id="text91"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Polytechnic Building 2</text>
+    <text
+       x="460.10672"
+       y="738.34906"
+       id="text90"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Bamboo Laboratory</text>
+    <text
+       x="515.27539"
+       y="621.5"
+       id="text89"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Polytechnic Workshop</text>
+    <text
+       x="346.78696"
+       y="2279.5679"
+       id="text76"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Administration Building</text>
+    <text
+       x="271.83575"
+       y="2617.4312"
+       id="text76-9"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke">Guard Post</text>
+    <text
+       x="541.74432"
+       y="2540.6863"
+       id="text76-9-1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke">CBM New Building</text>
+    <text
+       x="404.51669"
+       y="2654.3149"
+       id="text76-9-1-8"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;display:inline;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke"><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         x="404.51669"
+         y="2654.3149">Resource Generation</tspan><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         x="404.51669"
+         y="2666.8149">Office</tspan></text>
+    <text
+       x="601.80133"
+       y="2326.1079"
+       id="text76-9-1-5"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke">BIRDC</text>
+    <text
+       x="112.71236"
+       y="2629.2048"
+       id="text76-9-8"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke">ISU Soveneir Store</text>
+    <text
+       x="102.0172"
+       y="2531.573"
+       id="text76-9-2"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke">ISU Chapel</text>
+    <text
+       x="120.32212"
+       y="2581.7668"
+       id="text76-9-5"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke">Guard Resting Area</text>
+    <text
+       x="653.02991"
+       y="203.45757"
+       id="text77"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         x="653.02991"
+         y="203.45757">ISU Institute of Agriculture</tspan><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         x="653.02991"
+         y="215.95757">Building</tspan></text>
+    <text
+       x="779.46143"
+       y="224.94049"
+       id="text77-9"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;display:inline;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke">Mushroom Laboratory</text>
+    <text
+       x="713.3916"
+       y="42.885658"
+       id="text77-1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke">Comfort Room</text>
+    <text
+       x="983.92102"
+       y="536.06671"
+       id="text78"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">CCJE Building 2</text>
+    <text
+       x="912.26807"
+       y="845.19269"
+       id="text79"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         x="912.26807"
+         y="845.19269">College of Arts &amp; Criminology</tspan><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         x="912.26807"
+         y="857.69269">Building</tspan></text>
+    <text
+       x="630.76086"
+       y="1009.9243"
+       id="text80"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Shared Service Facility Office</text>
+    <text
+       x="431.64246"
+       y="847.74658"
+       id="text81"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Polytechnic Building 3</text>
+    <text
+       x="401.41806"
+       y="925.71014"
+       id="text81-2"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke">Comfort Room</text>
+    <text
+       x="580.49689"
+       y="1117.7957"
+       id="text82"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">ISU Gym</text>
+    <text
+       x="214.26291"
+       y="1561.364"
+       id="text83"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">CCSICT Ramon Magsaysay Building</text>
+    <text
+       x="117.12893"
+       y="1804.0886"
+       id="text84"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">College of Law Building</text>
+    <text
+       x="113.38496"
+       y="1679.791"
+       id="text84-7"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke">Comfort Room</text>
+    <text
+       x="639.62097"
+       y="2193.741"
+       id="text85"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         x="639.62097"
+         y="2193.741">College for Elementary Education</tspan><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         x="639.62097"
+         y="2206.241">Building</tspan></text>
+    <text
+       x="880.75439"
+       y="1185.8931"
+       id="text86"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Hostel</text>
+    <text
+       x="730.93811"
+       y="1650.5974"
+       id="text87"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">EDUC Faculty</text>
+    <text
+       x="846.565"
+       y="1458.1475"
+       id="text87-1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke">Food Court</text>
+    <text
+       x="713.45575"
+       y="1886.4436"
+       id="text88"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">CBM Building</text>
+  </g>
+</svg>
