@@ -587,11 +587,16 @@
             };
             window.CATS = CATS;
             window.catOf = (name) => {
-                return CATS[buildingsCategory[name]];
+                const categoryKey = buildingsCategory[name];
+                return CATS[categoryKey] || {
+                    label: "Other",
+                    color: "#c9d3c4"
+                };
             };
 
             const buildingsCenterCoord = {};
             const buildingsEntranceCoord = {};
+            let buildingsRoom = null;
 
             const showBuildingInfo = (name) => {
                 const targetLocationName = document.getElementById("target-location-name");
@@ -621,6 +626,42 @@
                 };
 
                 imgTester.src = imageUrl;
+
+                // Building rooms
+                const targetLocationRooms = document.getElementById("target-location-rooms");
+
+                if (buildingsRoom[name]) {
+                    targetLocationRooms.parentElement.style.display = "block";
+                    targetLocationRooms.innerHTML = "";
+
+                    const rooms = buildingsRoom[name];
+
+                    if (Object.keys(rooms).length == 1) {
+                        targetLocationRooms.innerHTML = [...rooms["first-floor"]].sort().map(w => "• " + w).join("<br>");
+                    }
+                    else {
+                        let content = "";
+
+                        for (const [floor, room] of Object.entries(rooms)) {
+                            room.sort();
+
+                            const floorName = floor.split("-").map(w => w.charAt().toUpperCase() + w.slice(1)).join(" "); // don't mind the method chaining haha
+                            content += `<b>• ${floorName}:</b> <br>`;
+
+                            for (let r of room) {
+                                content += "- " + r + "<br>";
+                            }
+
+                            content += "<br>";
+                        }
+
+                        targetLocationRooms.innerHTML = content.slice(0, content.length - 4); // Used slice to remove the last breakline
+                    }
+                    
+                }
+                else {
+                    targetLocationRooms.parentElement.style.display = "none";
+                }
 
                 const sheet = document.getElementById("sheet");
                 if (!((parseInt(window.getComputedStyle(sheet).getPropertyValue("top")) * 100 / window.innerHeight) < 80)) {
@@ -656,13 +697,19 @@
             // 1. Load your GeoJSON file
             async function displayMap() {
                 try {
-                    const response = await fetch("./map.geojson");
+                    const mapGeojson = await fetch("./map.geojson");
+                    const mapRooms = await fetch("./map_rooms.json");
 
-                    if (!response.ok) {
+                    if (!mapGeojson.ok) {
                         throw new Error("Could not load map.geojson");
                     }
+                    if (!mapRooms.ok) {
+                        throw new Error("Could not load map_rooms.json");
+                    }
 
-                    const campusData = await response.json();
+                    const campusData = await mapGeojson.json();
+                    buildingsRoom = await mapRooms.json();
+                    window.buildingsRoom = buildingsRoom;
 
                     // 2. Calculate the geographic boundaries of the map
                     const geoJsonLayer = L.geoJSON(campusData);
@@ -792,13 +839,15 @@
                     map.setMaxBounds(paddedBounds.pad(0.5));
 
                     map.setView([center.lat, center.lng], 18);
+
+                    console.log("Map loaded!");
                 }
                 catch (error) {
                     console.error("Error displaying map:", error);
                 }
             }
 
-            displayMap();
+            window.mapReady = displayMap();
         </script>
 
         <!--Pathfinding-->
@@ -1009,6 +1058,7 @@
 
                     routeLayer.bringToFront();
                     
+                    console.log("Path successfully traced.");
                     return true;
                 }
                 catch (error) {
@@ -1071,8 +1121,6 @@
 
                     for (const location of locations.features) {
                         const locationName = location.properties?.name;
-
-                        console.log(locationName);
 
                         if (!locationName || seenNames.has(locationName)) {
                             continue;
@@ -1169,14 +1217,17 @@
                         }
                         
                     });
+
+                    console.log("Location names loaded!");
                 }
                 catch (error) {
-                    console.log("Error loading names:", error);
-                    showStatus("An error has occured, please reload the page", 5000, true);
+                    console.error("Error loading names:", error);
                 }
             }
 
-            loadLocationNames();
+            window.mapReady.then(() => {
+                loadLocationNames();
+            });
         </script>
 
         <!--Current Location Marker-->
@@ -1436,7 +1487,13 @@
                     return;
                 }
 
-                window.map.flyTo([fromCoords.lat, fromCoords.lng], 20);
+                // Zoom to paths
+                let pathCenter = L.latLngBounds(
+                    L.latLng(fromCoords.lat, fromCoords.lng),
+                    L.latLng(toCoords.lat, toCoords.lng)
+                ).getCenter();
+
+                window.map.flyTo([pathCenter.lat, patCenter.lng], 20);
 
                 showStatus("Route found!");
 
