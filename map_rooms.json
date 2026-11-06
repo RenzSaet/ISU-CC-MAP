@@ -1,0 +1,261 @@
+{
+    "Administration Building": {
+        "first-floor": [
+            "Counceling Room",
+            "Guidance and Counceling, Testing Placement and Scholarship Unit",
+            "Cashier Office",
+            "Budget Office",
+            "Comission on Audit",
+            "Planning and Dev't Office",
+            "Office of the Registrar",
+            "Records Office",
+            "Supply Management",
+            "Accounting Office"
+        ],
+        "second-floor": [
+            "ICT & MIS Office",
+            "Procurement / BAC Office",
+            "Office of Executive Officer",
+            "Office of the Extension and Training Services Director"
+        ]
+    },
+
+    "College of Law Building": {
+        "first-floor": [
+            "Room 101",
+            "Office 101",
+            "Room 102",
+            "Office 2"
+        ],
+        "second-floor": [
+            "Room 201",
+            "Room 202",
+            "Room 203",
+            "Room 204"
+        ]
+    },
+
+    "CCSICT Ramon Magsaysay Building": {
+        "first-floor": [
+            "Office",
+            "Room 102",
+            "Room 103",
+            "Room 104",
+            "Dean's Office",
+            "Faculty Office"
+        ],
+        "second-floor": [
+            "Accredation Room",
+            "Computer Lab",
+            "BPOTS Center Function Hall"
+        ]
+    },
+
+    "CCSICT IT Building": {
+        "first-floor": [
+            "IT Room 101",
+            "IT Room 102",
+            "IT Room 103",
+            "IT Room 104"
+        ],
+        "second-floor": [
+            "IT Room 201",
+            "IT Room 202",
+            "IT Room 203",
+            "IT Room 204"
+        ],
+        "third-floor": [
+            "IT Room 301",
+            "IT Room 302",
+            "IT Room 303",
+            "IT Room 304"
+        ]
+    },
+
+    "Polytechnic Faculty": {
+        "first-floor": [
+            "Faculty Office",
+            "Electronics Lab Room 101"
+        ]
+    },
+
+    "Polytechnic Building 2": {
+        "first-floor": [
+            "Automotive Shop 101",
+            "Room 102",
+            "Room 103",
+            "Automotive Shop 102"
+        ]
+    },
+
+    "Polytechnic Building 3": {
+        "first-floor": [
+            "Room 104",
+            "Room 105",
+            "Room 106",
+            "Polytechnic School SBO Office"
+        ]
+    },
+
+    "ISU Institute of Agriculture Building": {
+        "first-floor": [
+            "Room 101",
+            "SBO Office",
+            "Room 102",
+            "Room 103",
+            "Faculty Office",
+            "Room 104",
+            "Room 105",
+            "Room 106"
+        ]
+    },
+
+    "CCJE Building 2": {
+        "first-floor": [
+            "Cauayan Sattelite Forensic Office Directory",
+            "Room 110",
+            "Room 109",
+            "Room 108",
+            "Room 107"
+        ]
+    },
+
+    "College of Arts & Criminology Building": {
+        "first-floor": [
+            "Room 106",
+            "Room 105",
+            "Room 104",
+            "CCJE Faculty Office",
+            "Room 103",
+            "Room 102", 
+            "Room 101"
+        ]
+    },
+
+    "Polytechnic Building 1": {
+        "first-floor": [
+            "Room 108",
+            "Room 107"
+        ]
+    },
+
+    "Shared Service Facility Office": {
+        "first-floor": [
+            "Fabrication Laboratory",
+            "NSTP Office",
+            "The Kauayan Communicator Office",
+            "Bamboo Development Center"
+        ]
+    },
+
+    "ISU Gym": {
+        "first-floor": [
+            "Office of Socio-Cultural Affairs",
+            "Sports Office",
+            "Office of Student Affairs and Services (OSAS)",
+            "Supreme Student Council"
+        ]
+    },
+
+    "EDUC Faculty": {
+        "first-floor": [
+            "English Room",
+            "Filipino Room",
+            "Math Room",
+            "Office of the Dead",
+            "LRC Filipino",
+            "LRC English"
+        ],
+        "second-floor": [
+            "Faculty Room",
+            "Prof. Ed. Room"
+        ]
+    },
+
+    "CBM Building": {
+        "first-floor": [
+            "Room-101",
+            "Room 102",
+            "CBM Office",
+            "Room 103",
+            "Room 104",
+            "Room 105",
+            "Room 106",
+            "Room 107",
+            "Room 108"
+        ]
+    },
+
+    "College for Elementary Education Building": {
+        "first-floor": [
+            "Room 101",
+            "Room 102",
+            "Room 103"
+        ],
+        "second-floor": [
+            "Room 201",
+            "Room 202",
+            "Room 203"
+        ]
+    },
+
+    "CBM New Building": {
+        "first-floor": [
+            "Campus Business Affairs Office (CBAO)",
+            "Food Inovation Center"
+        ],
+        "second-floor": [
+            "Biology Laboratory",
+            "Room 205",
+            "Room 204",
+            "Chemistry and Physio Chemical Lab",
+            "Science Lecturer Room 2",
+            "Science Lecturer Room 1",
+            "BSAIS Simulation Room",
+            "Room 206",
+            "Room 207",
+            "Speech Laboratory",
+            "Computer Laboratory / Room 110",
+            "Physics Laboratory / Room 211",
+            "CBM Faculty"
+        ],
+        "third-floor": [
+            "Room 311",
+            "Room 312",
+            "Room 313",
+            "Room 314",
+            "Room 315",
+            "Room 316",
+            "Room 317",
+            "Room 301",
+            "Room 310",
+            "Room 309",
+            "Room 308",
+            "Room 307",
+            "Room 306",
+            "Room 305",
+            "Room 304",
+            "Room 303",
+            "Room 302"
+        ],
+        "fourth-floor": [
+            "Room 401",
+            "Room 402",
+            "Room 403",
+            "Room 404",
+            "Room 405",
+            "Room 406",
+            "Room 407",
+            "Room 408",
+            "Room 417",
+            "Room 416",
+            "Room 415",
+            "Room 414",
+            "Room 413",
+            "Room 412",
+            "Room 411",
+            "Room 410",
+            "Room 409"
+        ]
+    }
+}
