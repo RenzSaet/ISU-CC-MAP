@@ -202,6 +202,35 @@
                 border: 1px solid rgba(15, 44, 26, 0.35);
             }
 
+            .room-result {
+                padding-left: 36px !important;
+                font-size: 14px !important;
+                color: var(--muted);
+
+                height: auto !important;
+                min-height: 60px !important;
+
+                align-items: center;
+            }
+
+            .room-result small {
+                display: block;
+                font-size: 12px;
+                color: var(--muted);
+                margin-top: 3px;
+            }
+
+            .room-result::before {
+                content: "\f1b2";
+                font-family: FontAwesome;
+                color: var(--green);
+                font-size: 13px;
+            }
+
+            .room-result::after {
+                content: "";
+            }
+
             #no-results {
                 display: none;
                 position: fixed;
@@ -489,6 +518,291 @@
                 }
             }
 
+            [hidden] {
+                display: none !important;
+            }
+
+            .sr-only {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                clip: rect(0 0 0 0);
+                white-space: nowrap;
+            }
+
+            #searchbar:focus-within {
+                box-shadow: 0 0 0 3px rgba(47, 125, 79, 0.45), var(--shadow);
+            }
+
+            #map-loading {
+                position: fixed;
+                inset: 0;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--paper);
+                transition: opacity 0.35s;
+            }
+
+            #map-loading.done {
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .loading-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+                max-width: 320px;
+                padding: 24px;
+                text-align: center;
+            }
+
+            .loading-card p {
+                margin: 0;
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--forest);
+            }
+
+            .loading-card .loading-note {
+                font-size: 13px;
+                font-weight: 400;
+                color: var(--muted);
+            }
+
+            .loading-card .loading-note:empty {
+                display: none;
+            }
+
+            .spinner {
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                border: 4px solid var(--mist);
+                border-top-color: var(--green);
+                animation: spin 0.8s linear infinite;
+            }
+
+            #map-loading.failed .spinner {
+                display: none;
+            }
+
+            #loading-retry {
+                height: 48px;
+                padding: 0 28px;
+                border-radius: 24px;
+                font-size: 15px;
+                font-weight: 700;
+                margin-top: 6px;
+            }
+
+            @keyframes spin {
+                to { transform: rotate(360deg); }
+            }
+
+            #map-chips {
+                position: fixed;
+                top: 72px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: min(560px, calc(100% - 24px));
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                z-index: 3;
+                pointer-events: none;
+            }
+
+             #map-chips > * {
+                pointer-events: auto;
+            }
+
+            body.chips-on #status {
+                top: calc(100% + 62px);
+            }
+
+            .chip {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                min-height: 44px;
+                max-width: 100%;
+                padding: 0 0 0 14px;
+                background: #fff;
+                border-radius: 22px;
+                box-shadow: var(--shadow);
+                font-size: 14px;
+                font-weight: 700;
+                color: var(--forest);
+            }
+
+            .chip-text {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .chip-close {
+                width: 44px;
+                height: 44px;
+                flex: none;
+                border: 0;
+                border-radius: 50%;
+                background: transparent;
+                color: var(--muted);
+                font-size: 16px;
+            }
+
+            .chip-close:hover {
+                background: var(--mist);
+            }
+
+            #clear-route-pill {
+                height: 44px;
+                padding: 0 16px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                border: 2px solid var(--coral);
+                border-radius: 22px;
+                background: #fff;
+                color: var(--forest);
+                font-size: 14px;
+                font-weight: 700;
+                box-shadow: var(--shadow);
+            }
+
+            #clear-route-pill i {
+                color: var(--coral);
+            }
+
+            #clear-route-pill:hover {
+                background: #fff3e8;
+            }
+
+            .eyebrow {
+                margin: 0 0 4px;
+                font-size: 12px;
+                font-weight: 700;
+                letter-spacing: 0.4px;
+                color: var(--green);
+            }
+
+            #sheet #target-location-name {
+                font-size: 26px;
+                overflow-wrap: anywhere;
+            }
+
+            #target-room-note {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin: 10px 0 0;
+                padding: 8px 12px;
+                border-radius: 12px;
+                background: #fff3e8;
+                color: #7a3a0a;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            mark.hit {
+                background: #ffe3cc;
+                color: #7a3a0a;
+                border-radius: 4px;
+                padding: 1px 4px;
+                font-weight: 700;
+            }
+
+            .sheet-actions {
+                display: flex;
+                gap: 10px;
+            }
+
+            .sheet-actions button {
+                flex: 1;
+            }
+
+            #sheet-clear-route {
+                height: 48px;
+                border-radius: 24px;
+                font-size: 15px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            #target-location-image.is-loading {
+                border: 0;
+                background: linear-gradient(100deg, #eef5ea 30%, #f7faf4 50%, #eef5ea 70%);
+                background-size: 200% 100%;
+                animation: shimmer 1.2s linear infinite;
+            }
+
+            #target-location-image.has-photo {
+                border: 0;
+            }
+
+            #target-location-image.no-photo {
+                flex-direction: column;
+                gap: 6px;
+                padding: 16px;
+                text-align: center;
+                border-color: var(--line);
+                background: #f1f7ec;
+                background: color-mix(in srgb, var(--tint, #c9d3c4) 22%, #fff);
+            }
+
+            #target-location-image.no-photo i {
+                font-size: 40px;
+                color: var(--forest);
+            }
+
+            #target-location-image.no-photo strong {
+                font-size: 15px;
+                color: var(--forest);
+            }
+
+            #target-location-image.no-photo small {
+                font-size: 13px;
+                font-weight: 400;
+                color: var(--muted);
+            }
+
+            @keyframes shimmer {
+                to { background-position: -200% 0; }
+            }
+
+            #location-list {
+                scroll-padding: 84px 0 24px;
+            }
+
+            #location-list .location-name.active {
+                background: var(--mist);
+                outline: 2px solid var(--green);
+                outline-offset: -2px;
+            }
+
+            @media (max-width: 768px) {
+                #map-chips {
+                    left: 12px;
+                    transform: none;
+                    width: calc(100% - 92px);
+                }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .spinner, #target-location-image.is-loading {
+                    animation: none;
+                }
+            }
+
             @media (prefers-reduced-motion: reduce) {
                 * {
                     transition: none !important;
@@ -500,22 +814,43 @@
     <body>
         <div id="searchbar" role="search">
             <button id="returnbutton" aria-label="Close search"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
-            <input type="text" id="searchbox" placeholder="Search buildings" aria-label="Search buildings" autocomplete="off" enterkeyhint="search">
+            <input type="text" id="searchbox" role="combobox" aria-expanded="false" aria-controls="location-list" aria-autocomplete="list" aria-haspopup="listbox" placeholder="Search buildings or rooms" aria-label="Search buildings or rooms" autocomplete="off" enterkeyhint="search">
             <button id="searchbutton" aria-label="Go to building"><i class="fa fa-search" aria-hidden="true"></i></button>
             <p id="status" role="status" aria-live="polite"></p>
         </div>
 
         <div id="location-list-wrapper">
-            <div id="location-list"></div>
-            <p id="no-results">No building matches that name.</p>
+            <div id="location-list" role="listbox" aria-label="Search results"></div>
+            <p id="no-results">No building or room matches that name.</p>
         </div>
 
         <div id="map"></div>
+
+        <div id="map-loading" role="status" aria-live="polite">
+            <div class="loading-card">
+                <div class="spinner" aria-hidden="true"></div>
+                <p id="loading-text">Loading campus map...</p>
+                <p id="loading-note" class="loading-note"></p>
+                <button id="loading-retry" class="primary" hidden>Try again</button>
+            </div>
+        </div>
+
+        <div id="map-chips" hidden>
+            <div class="chip" id="selected-chip" hidden>
+                <span class="dot" id="selected-chip-dot"></span>
+                <span class="chip-text" id="selected-chip-text"></span>
+                <button class="chip-close" id="selected-chip-close" aria-label="Clear selection"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+            <button id="clear-route-pill" hidden><i class="fa fa-times-circle" aria-hidden="true"></i>Clear route</button>
+        </div>
+
+        <div id="result-count" class="sr-only" aria-live="polite"></div>
 
         <div id="sheet" aria-label="Building details">
             <div id="handle" role="separator" aria-label="Drag to resize"></div>
 
             <div id="content">
+                <p class="eyebrow" id="sheet-eyebrow" hidden>Selected building</p>
                 <h1 id="target-location-name">ISU CC Map</h1>
 
                 <p id="target-location-category">
@@ -523,19 +858,24 @@
                     <span id="category-text">Tap a building to see its details</span>
                 </p>
 
+                <p id="target-room-note" hidden><i class="fa fa-map-pin" aria-hidden="true"></i><span id="target-room-note-text"></span></p>
+
                 <div id="target-location-details">
-                    <button id="sheet-directions" class="primary"><i class="fa fa-location-arrow" aria-hidden="true"></i>Directions</button>
+                    <div class="sheet-actions">
+                        <button id="sheet-directions" class="primary"><i class="fa fa-location-arrow" aria-hidden="true"></i>Directions</button>
+                        <button id="sheet-clear-route" class="secondary" hidden><i class="fa fa-times" aria-hidden="true"></i>Clear route</button>
+                    </div>
 
                     <div id="target-location-image" class="detail-card">Photo coming soon</div>
 
                     <div class="detail-card">
-                        <h2>Administrators</h2>
-                        <div id="target-location-admins">Admins name here</div>
+                        <h2>Rooms</h2>
+                        <div id="target-location-rooms">List of rooms</div>
                     </div>
 
                     <div class="detail-card">
-                        <h2>Rooms</h2>
-                        <div id="target-location-rooms">List of rooms</div>
+                        <h2>Administrators</h2>
+                        <div id="target-location-admins">Admins name here</div>
                     </div>
                 </div>
             </div>
@@ -569,7 +909,6 @@
         <!--Display Map-->
         <script>
             const map = L.map("map", {
-                // minZoom: 19,
                 maxBoundsViscosity: 1.0
             });
             map.zoomControl.setPosition("topright");
@@ -595,10 +934,129 @@
             };
 
             const buildingsCenterCoord = {};
-            const buildingsEntranceCoord = {};
-            let buildingsRoom = null;
+            
+            const buildingsLayer = {};
+            let highlightLayer = null;
 
-            const showBuildingInfo = (name) => {
+            const escapeHTML = (text) => String(text).replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+            const roomLine = (prefix, text, isHit) => isHit ? `<mark class="hit">${prefix}${escapeHTML(text)}</mark>` : prefix + escapeHTML(text);
+
+            window.clearHighlight = () => {
+                if (highlightLayer) {
+                    map.removeLayer(highlightLayer);
+                    highlightLayer = null;
+                }
+            };
+
+            window.highlightBuilding = (name) => {
+                window.clearHighlight();
+
+                const layers = (buildingsLayer[name] || []).filter(layer => typeof layer.getLatLngs == "function");
+
+                if (layers.length == 0) {
+                    return;
+                }
+
+                highlightLayer = L.layerGroup(layers.map(layer => L.polygon(layer.getLatLngs(), {
+                    color: "#f26a1b",
+                    weight: 3,
+                    fillColor: "#f26a1b",
+                    fillOpacity: 0.18,
+                    interactive: false
+                }))).addTo(map);
+            };
+
+            let photoToken = 0;
+            const photoCache = {};
+
+            function photoCandidates(name) {
+                const lower = name.toLowerCase();
+                const list = [
+                    `img/${lower}.jpg`,
+                    `img/${lower}.jpeg`,
+                    `img/${lower}.png`,
+                    `img/${lower}.webp`,
+                    `img/${lower.replace(/\s+/g, "-")}.jpg`,
+                    `img/${name}.jpg`
+                ];
+
+                return [...new Set(list)];
+            }
+
+            function loadBuildingPhotos(name, category) {
+                const box = document.getElementById("target-location-image");
+                const token = ++photoToken;
+
+                box.className = "detail-card is-loading";
+                box.style.backgroundImage = "none";
+                box.textContent = "";
+                box.setAttribute("role", "img");
+                box.setAttribute("aria-label", `Loading photo of ${name}`);
+
+                const showPhoto = (url) => {
+                    box.className = "detail-card has-photo";
+                    box.style.backgroundImage = `url("${url}")`;
+                    box.textContent = "";
+                    box.setAttribute("aria-label", `Photo of ${name}`);
+                };
+
+                const showFallback = () => {
+                    box.className = "detail-card no-photo";
+                    box.style.backgroundImage = "none";
+                    box.style.setProperty("--tint", category.color);
+                    box.textContent = "";
+                    box.setAttribute("aria-label", `No photo available for ${name}`);
+
+                    const icon = document.createElement("i");
+                    icon.className = "fa fa-building-o";
+                    icon.setAttribute("aria-hidden", "true");
+
+                    const title = document.createElement("strong");
+                    title.textContent = name;
+
+                    const note = document.createElement("small");
+                    note.textContent = "No photo yet";
+
+                    box.append(icon, title, note);
+                };
+
+                if (name in photoCache) {
+                    photoCache[name] ? showPhoto(photoCache[name]) : showFallback();
+                    return;
+                }
+
+                const urls = photoCandidates(name);
+
+                const tryNext = (index) => {
+                    if (token != photoToken) {
+                        return; // user already picked another building
+                    }
+
+                    if (index >= urls.length) {
+                        photoCache[name] = null;
+                        showFallback();
+                        return;
+                    }
+
+                    const probe = new Image();
+
+                    probe.onload = () => {
+                        if (token != photoToken) return;
+                        photoCache[name] = urls[index];
+                        showPhoto(urls[index]);
+                    };
+
+                    probe.onerror = () => tryNext(index + 1);
+                    probe.src = urls[index];
+                };
+
+                tryNext(0);
+            }
+
+            let buildingsRoom = null;
+            let buildingsAdmin = {};
+
+            const showBuildingInfoCore = (name, roomInfo = null) => {
                 const targetLocationName = document.getElementById("target-location-name");
                 targetLocationName.textContent = name;
 
@@ -610,24 +1068,9 @@
 
                 const targetLocationDetails = document.getElementById("target-location-details");
 
-                const targetLocationImage = document.getElementById("target-location-image");
-                const imageUrl = `img/${name.toLowerCase()}.jpg`;
-                const imgTester = new Image();
+                loadBuildingPhotos(name, category);
 
-                imgTester.onload = function() {
-                    targetLocationImage.style.backgroundImage = `url('${imageUrl}')`;
-                    targetLocationImage.innerHTML = "";
-                };
-
-                // When building does not have image
-                imgTester.onerror = function() {
-                    targetLocationImage.style.backgroundImage = "none";
-                    targetLocationImage.innerHTML = "Photo coming soon";
-                };
-
-                imgTester.src = imageUrl;
-
-                // Building rooms
+                // Show Building rooms
                 const targetLocationRooms = document.getElementById("target-location-rooms");
 
                 if (buildingsRoom[name]) {
@@ -649,7 +1092,7 @@
                             content += `<b>• ${floorName}:</b> <br>`;
 
                             for (let r of room) {
-                                content += "- " + r + "<br>";
+                                content += roomLine("- ", r, roomInfo?.room == r && roomInfo?.floor == floorName) + "<br>";
                             }
 
                             content += "<br>";
@@ -663,11 +1106,39 @@
                     targetLocationRooms.parentElement.style.display = "none";
                 }
 
+                const targetLocationAdmins = document.getElementById("target-location-admins");
+
+                const deptAdmins = buildingsAdmin[name];
+
+                if (deptAdmins) {
+                    targetLocationAdmins.parentElement.style.display = "block";
+
+                    let adminContent = "";
+
+                    for (const admin of deptAdmins) {
+                        adminContent += "• " + admin + "<br>";
+                    }
+
+                    targetLocationAdmins.innerHTML = adminContent;
+                }
+                else {
+                    targetLocationAdmins.parentElement.style.display = "none";
+                }
+                
                 const sheet = document.getElementById("sheet");
                 if (!((parseInt(window.getComputedStyle(sheet).getPropertyValue("top")) * 100 / window.innerHeight) < 80)) {
                     sheet.style.top = "66vh";
                 }
             }
+
+            // Wrapper so every selection (search or map tap) also updates the chip, the outline and the sheet header
+            const showBuildingInfo = (name, roomInfo = null) => {
+                showBuildingInfoCore(name, roomInfo);
+
+                if (window.updateSelection) {
+                    window.updateSelection(name, roomInfo);
+                }
+            };
 
             window.showBuildingInfo = showBuildingInfo;
 
@@ -679,9 +1150,7 @@
 
                 statusLabel.innerHTML = message;
                 
-                if (warning) {
-                    statusLabel.style.color = warning ? "#b42318" : "";
-                }
+                statusLabel.style.color = warning ? "#b42318" : "";
 
                 if (duration > 0) {
                     statusTimer = setTimeout(() => {
@@ -699,6 +1168,7 @@
                 try {
                     const mapGeojson = await fetch("./map.geojson");
                     const mapRooms = await fetch("./map_rooms.json");
+                    const mapAdmins = await fetch("./map_admins.json");
 
                     if (!mapGeojson.ok) {
                         throw new Error("Could not load map.geojson");
@@ -706,10 +1176,16 @@
                     if (!mapRooms.ok) {
                         throw new Error("Could not load map_rooms.json");
                     }
+                    if(!mapAdmins.ok) {
+                        throw new Error("Could not load map_admins.json");
+                    }
 
                     const campusData = await mapGeojson.json();
+
                     buildingsRoom = await mapRooms.json();
                     window.buildingsRoom = buildingsRoom;
+
+                    const admins = await mapAdmins.json();
 
                     // 2. Calculate the geographic boundaries of the map
                     const geoJsonLayer = L.geoJSON(campusData);
@@ -739,33 +1215,22 @@
                             center.lng + halfLng + offsetLng
                     ]);
 
-                    // Get entrance coordinates
-                    campusData.features.forEach(feature => {
-                        if (feature.properties?.type === "entrance") {
-                            const name = feature.properties.name;
-                            const coords = feature.geometry.coordinates;
-
-                            const convertedName = name.split(" ").slice(0, -1).join(" ");
-
-                            buildingsEntranceCoord[convertedName] = {
-                                lat: coords[1],
-                                lng: coords[0]
-                            };
-                        }
-                    });
-
                     // 4. Display the SVG over the geographic area
-                    L.imageOverlay("./map.svg", svgBounds, {
+                    const svgOverlay = L.imageOverlay("./map.svg", svgBounds, {
                         opacity: 1,
                         interactive: false
-                    }).addTo(map);
+                    });
+
+                    // Lets the loading screen wait for the drawing itself
+                    window.svgLoaded = new Promise(resolve => {
+                        svgOverlay.on("load", () => resolve(true));
+                        svgOverlay.on("error", () => resolve(false));
+                    });
+
+                    svgOverlay.addTo(map);
 
                     // 5. Display the GeoJSON features over the SVG
                     L.geoJSON(campusData, {
-                        filter: feature => {
-                            return feature.properties?.type !== "entrance";
-                        },
-
                         style: {
                             color: "transparent",
                             weight: 2,
@@ -777,13 +1242,20 @@
                         onEachFeature: (feature, layer) => {
                             const name = feature.properties?.name || "Unnamed feature";
 
-                            if (!layer.getLatLng && feature.geometry?.type == "Polygon" && feature.properties?.name != "Unknown") {
+                            if (feature.properties?.type == "building") {
                                 const coords = layer.getBounds().getCenter();
+
+                                (buildingsLayer[name] ||= []).push(layer);
 
                                 buildingsCenterCoord[name] = {
                                     lat: coords.lat,
                                     lng: coords.lng
                                 }
+                            }
+
+                            const department = feature.properties?.department;
+                            if (feature.properties?.department) {
+                                buildingsAdmin[name] = admins[department];
                             }
 
                             if (feature.properties?.name == "Unknown") {
@@ -814,8 +1286,6 @@
                                     long = coords.lng;
                                 }
 
-                                // layer.bindPopup(`${name}<br>Latitude: ${lat}<br>Longitude: ${long}`);
-
                                 // For bottom sheet
                                 if (feature.properties?.name != "Unknown") {
                                     showBuildingInfo(name);
@@ -825,7 +1295,6 @@
                     }).addTo(map);
 
                     window.buildingsCenterCoord = buildingsCenterCoord;
-                    window.buildingsEntranceCoord = buildingsEntranceCoord;
 
                     // 6. Zoom the map to fit the campus
                     const bounds = geoJsonLayer.getBounds();
@@ -841,9 +1310,13 @@
                     map.setView([center.lat, center.lng], 18);
 
                     console.log("Map loaded!");
+                    showStatus("Map loaded!", 3000);
+                    return true;
                 }
                 catch (error) {
                     console.error("Error displaying map:", error);
+                    showStatus("Error loading map, please reload the page.", 5000, true);
+                    return false;
                 }
             }
 
@@ -867,7 +1340,7 @@
                 };
             }
 
-            function findNearestVertex(coordinates, network, limit = 20) {
+            function findNearestVertex(coordinates, network, limit = 15) {
                 const candidates = [];
 
                 for (const feature of network.features) {
@@ -910,6 +1383,12 @@
             }
 
             async function displayPath(startCoords, endCoords) {
+                // Remove previous route
+                if (routeLayer) {
+                    window.map.removeLayer(routeLayer);
+                    routeLayer = null;
+                }
+
                 try {
                     const response = await fetch("./map.geojson");
 
@@ -982,16 +1461,12 @@
                     // Stop if no route exists
                     if (!result) {
                         console.warn("No route found. Check whether the walking paths connect.");
+                        document.dispatchEvent(new CustomEvent("route-changed", { detail: { active: false } }));
                         return false;
                     }
 
                     console.log("Route coordinates:", result.path);
                     console.log("Route length:", result.weight.toFixed(3) * 1000, "m");
-
-                    // Remove previous route
-                    if (routeLayer) {
-                        window.map.removeLayer(routeLayer);
-                    }
 
                     // Convert route to GeoJSON
                     const routeFeatures = [
@@ -1051,7 +1526,7 @@
                                 weight: 4,
                                 opacity: 1,
                                 dashArray: "1, 9",
-                                linCap: "round"
+                                lineCap: "round"
                             };
                         }
                     }).addTo(window.map);
@@ -1059,10 +1534,12 @@
                     routeLayer.bringToFront();
                     
                     console.log("Path successfully traced.");
+                    document.dispatchEvent(new CustomEvent("route-changed", { detail: { active: true } }));
                     return true;
                 }
                 catch (error) {
                     console.log("Error tracing path:", error);
+                    document.dispatchEvent(new CustomEvent("route-changed", { detail: { active: false } }));
                     return false;
                 }
             }
@@ -1073,7 +1550,14 @@
                 if (routeLayer) {
                     window.map.removeLayer(routeLayer);
                     routeLayer = null;
+
+                    showStatus("Path cleared!", 5000);
                 }
+                else {
+                    showStatus("Path is already clear.", 5000, true);
+                }
+
+                document.dispatchEvent(new CustomEvent("route-changed", { detail: { active: false } }));
                 
                 window.stopLivePathTracing();
             }
@@ -1098,6 +1582,8 @@
 
             let searchBoxIsOpen = false;
             window.searchBoxIsOpen = searchBoxIsOpen;
+
+            let optionCounter = 0;
 
             async function loadLocationNames() {
                 try {
@@ -1128,8 +1614,11 @@
 
                         seenNames.add(locationName);
 
+                        // Location names to searchbar
                         const name = document.createElement("div");
                         name.classList.add("location-name");
+                        name.setAttribute("role", "option");
+                        name.id = "opt-" + (optionCounter++);
                         name.dataset.name = locationName;
 
                         const dot = document.createElement("span");
@@ -1142,7 +1631,40 @@
                         name.append(dot, label);
 
                         locationList.appendChild(name);
+                        
+                        // If the building has rooms
+                        if (window.buildingsRoom[locationName]) {
+                            for (const [floor, rooms] of Object.entries(window.buildingsRoom[locationName])) {
+                                const floorName = floor.split("-").map(w => w.charAt().toUpperCase() + w.slice(1)).join(" ");
 
+                                rooms.sort();
+
+                                for (const roomName of rooms) {
+                                    const room = document.createElement("div");
+                                    room.classList.add("location-name", "room-result");
+                                    room.setAttribute("role", "option");
+                                    room.id = "opt-" + (optionCounter++);
+                                    room.dataset.name = `${roomName}, ${floorName}, ${locationName}`; // searchbar value
+
+                                    const roomLabel = document.createElement("span");
+
+                                    const roomTitle = document.createElement("span");
+                                    roomTitle.classList.add("room-title");
+                                    roomTitle.textContent = roomName;
+
+                                    const floorLabel = document.createElement("small");
+                                    floorLabel.textContent = floorName + " - " + locationName;
+                                    
+                                    roomLabel.append(roomTitle, floorLabel);
+
+                                    room.append(roomLabel);
+
+                                    locationList.appendChild(room);
+                                }
+                            }
+                        }
+
+                        // Path option
                         const option1 = document.createElement("option");
                         option1.textContent = locationName;
                         option1.value = locationName;
@@ -1165,6 +1687,7 @@
                         }
 
                         noResults.classList.toggle("show", visible == 0);
+                        document.getElementById("result-count").textContent = visible == 0 ? "No results" : visible + (visible == 1 ? " result" : " results");
                     }
 
                     // Show search list when searchbox is clicked
@@ -1174,6 +1697,7 @@
                             locationListWrapper.style.setProperty("--displaytype", "block");
                             searchbox.addEventListener("input", searchFilterer);
                             returnbutton.style.display = "flex";
+                            searchbox.setAttribute("aria-expanded", "true");
                             searchBoxIsOpen = true;
                         }
                     });
@@ -1185,6 +1709,8 @@
                             locationListWrapper.style.setProperty("--displaytype", "none");
                             searchbox.removeEventListener("input", searchFilterer);
                             returnbutton.style.display = "none";
+                            searchbox.setAttribute("aria-expanded", "false");
+                            if (window.clearActiveResult) window.clearActiveResult();
                             searchBoxIsOpen = false;
                         }
                     });
@@ -1198,14 +1724,18 @@
 
                     // Zoom-in to searched building
                     searchbutton.addEventListener("click", () => {
-                        const targetBuildingCoord = window.buildingsCenterCoord[searchbox.value];
+                        const searchParts = searchbox.value.split(", ").map(part => part.trim());
+
+                        const targetBuilding = searchParts.length === 3 ? searchParts[2] : searchParts[0]; // Extracts building name from searchParts
+
+                        const targetBuildingCoord = window.buildingsCenterCoord[targetBuilding];
 
                         if (targetBuildingCoord) {
                             const clickEvent = new Event('click');
                             returnbutton.dispatchEvent(clickEvent);
 
                             window.map.flyTo([targetBuildingCoord.lat, targetBuildingCoord.lng], 20);
-                            window.showBuildingInfo(searchbox.value);
+                            window.showBuildingInfo(targetBuilding, searchParts.length === 3 ? { room: searchParts[0], floor: searchParts[1] } : null);
                         }
                         else {
                             if (searchbox.value == "") {
@@ -1259,6 +1789,11 @@
 
                     const userCoords = [latitude, longitude];
                     const accuracy = position.coords.accuracy;
+
+                    if (!isInsideCampus(userCoords)) {
+                        showStatus("You are outside the campus map. Navigation is unavailable.", 5000, true);
+                        return;
+                    }
 
                     if (!userMarker) {
                         // Create marker for the first location update
@@ -1441,6 +1976,13 @@
             showDirection.button.title = "Get directions";
             showDirection.button.setAttribute("aria-label", "Get directions");
 
+            const clearPathButton = L.easyButton("fa fa-eraser", () => {
+                window.clearPath();
+            }).addTo(map);
+            clearPathButton.setPosition("topright");
+            clearPathButton.button.title = "Clear path";
+            clearPathButton.button.setAttribute("aria-label", "Get directions");
+
             async function showRoute() {
                 window.showStatus("Calculating route...", 0);
 
@@ -1452,7 +1994,7 @@
                     return;
                 }
 
-                let toCoords = window.buildingsEntranceCoord[toLocation] || window.buildingsCenterCoord[toLocation];
+                let toCoords = window.buildingsCenterCoord[toLocation];
 
                 if (!toCoords) {
                     window.showStatus("Destination not found.", 5000, true);
@@ -1483,7 +2025,7 @@
                 );
                 
                 if (!routeFound) {
-                    window.showStatus("Unable to find a route", true);
+                    window.showStatus("Unable to find a route", 5000, true);
                     return;
                 }
 
@@ -1600,8 +2142,73 @@
                 searchbox.dispatchEvent(new Event("input"));
             });
 
+            // Keyboard: arrows move through results, Enter picks, Escape closes
+            let activeIndex = -1;
+
+            const resultRows = () => Array.from(locationList.children).filter(row => row.getAttribute("role") == "option" && row.style.display != "none");
+
+            function clearActiveResult() {
+                locationList.querySelectorAll(".location-name.active").forEach(row => {
+                    row.classList.remove("active");
+                    row.setAttribute("aria-selected", "false");
+                });
+
+                searchbox.removeAttribute("aria-activedescendant");
+                activeIndex = -1;
+            }
+
+            window.clearActiveResult = clearActiveResult;
+
+            function moveActive(step) {
+                const rows = resultRows();
+
+                if (rows.length == 0) {
+                    return;
+                }
+
+                let next;
+
+                if (activeIndex < 0) {
+                    next = step > 0 ? 0 : rows.length - 1;
+                }
+                else {
+                    next = (activeIndex + step + rows.length) % rows.length;
+                }
+
+                clearActiveResult();
+                activeIndex = next;
+
+                const row = rows[next];
+                row.classList.add("active");
+                row.setAttribute("aria-selected", "true");
+                searchbox.setAttribute("aria-activedescendant", row.id);
+                row.scrollIntoView({ block: "nearest" });
+            }
+
+            searchbox.addEventListener("input", clearActiveResult);
+
             searchbox.addEventListener("keydown", event => {
-                if (event.key == "Enter") searchbutton.click();
+                if (event.key == "ArrowDown" || event.key == "ArrowUp") {
+                    event.preventDefault();
+
+                    if (!searchBoxIsOpen) {
+                        searchbox.dispatchEvent(new Event("click"));
+                    }
+
+                    moveActive(event.key == "ArrowDown" ? 1 : -1);
+                }
+                else if (event.key == "Enter") {
+                    event.preventDefault();
+
+                    const rows = resultRows();
+
+                    if (activeIndex >= 0 && rows[activeIndex]) {
+                        rows[activeIndex].click();
+                    }
+                    else {
+                        searchbutton.click();
+                    }
+                }
             });
 
             document.addEventListener("keydown", event => {
@@ -1622,6 +2229,120 @@
 
                 window.directionPanel.style.display = "flex";
             });
+        </script>
+
+        <!--Loading screen, selection chip, clear-route buttons-->
+        <script>
+            // ---- Loading screen ----
+            const loadingScreen = document.getElementById("map-loading");
+            const loadingText = document.getElementById("loading-text");
+            const loadingNote = document.getElementById("loading-note");
+            const loadingRetry = document.getElementById("loading-retry");
+
+            const slowTimer = setTimeout(() => {
+                loadingNote.textContent = "Still loading. This can take a moment on a slow connection.";
+            }, 8000);
+
+            function loadingFailed(message) {
+                clearTimeout(slowTimer);
+                loadingScreen.classList.add("failed");
+                loadingText.textContent = "Couldn't load the map";
+                loadingNote.textContent = message;
+                loadingRetry.hidden = false;
+                loadingRetry.focus();
+            }
+
+            loadingRetry.addEventListener("click", () => location.reload());
+
+            window.mapReady.then(async (ok) => {
+                if (!ok) {
+                    loadingFailed("Check your connection and try again.");
+                    return;
+                }
+
+                // Wait for the map drawing too (but not forever)
+                const svgState = await Promise.race([
+                    window.svgLoaded || Promise.resolve(true),
+                    new Promise(resolve => setTimeout(() => resolve("timeout"), 15000))
+                ]);
+
+                if (svgState === false) {
+                    loadingFailed("The campus drawing (map.svg) didn't load.");
+                    return;
+                }
+
+                clearTimeout(slowTimer);
+                loadingScreen.classList.add("done");
+                setTimeout(() => { loadingScreen.hidden = true; }, 400);
+            });
+
+            // ---- Selected building chip ----
+            const mapChips = document.getElementById("map-chips");
+            const selectedChip = document.getElementById("selected-chip");
+            const clearRoutePill = document.getElementById("clear-route-pill");
+            const sheetClearRoute = document.getElementById("sheet-clear-route");
+            const sheetEyebrow = document.getElementById("sheet-eyebrow");
+            const roomNote = document.getElementById("target-room-note");
+
+            function refreshChips() {
+                const anyVisible = !selectedChip.hidden || !clearRoutePill.hidden;
+                mapChips.hidden = !anyVisible;
+                document.body.classList.toggle("chips-on", anyVisible);
+            }
+
+            window.updateSelection = (name, roomInfo) => {
+                const category = window.catOf(name);
+
+                document.getElementById("selected-chip-text").textContent = roomInfo ? `${roomInfo.room} · ${name}` : name;
+                document.getElementById("selected-chip-dot").style.background = category.color;
+                document.getElementById("selected-chip-close").setAttribute("aria-label", `Clear selection: ${name}`);
+                selectedChip.hidden = false;
+
+                sheetEyebrow.textContent = roomInfo ? "Selected room" : "Selected building";
+                sheetEyebrow.hidden = false;
+
+                if (roomInfo) {
+                    document.getElementById("target-room-note-text").textContent = `${roomInfo.room} · ${roomInfo.floor}`;
+                    roomNote.hidden = false;
+                }
+                else {
+                    roomNote.hidden = true;
+                }
+
+                window.highlightBuilding(name);
+                refreshChips();
+
+                const hit = document.querySelector("#target-location-rooms mark.hit");
+                if (hit) hit.scrollIntoView({ block: "nearest" });
+            };
+
+            window.clearSelection = () => {
+                selectedChip.hidden = true;
+                sheetEyebrow.hidden = true;
+                roomNote.hidden = true;
+
+                document.getElementById("target-location-name").textContent = "ISU CC Map";
+                document.getElementById("category-text").textContent = "Tap a building to see its details";
+                document.getElementById("sheet").classList.remove("has-selection");
+                document.getElementById("sheet").style.top = "90vh";
+
+                window.clearHighlight();
+                refreshChips();
+            };
+
+            document.getElementById("selected-chip-close").addEventListener("click", window.clearSelection);
+
+            // ---- Clear route buttons (pill on the map + button in the sheet) ----
+            document.addEventListener("route-changed", (event) => {
+                const active = event.detail.active;
+
+                clearRoutePill.hidden = !active;
+                sheetClearRoute.hidden = !active;
+                refreshChips();
+            });
+
+            clearRoutePill.addEventListener("click", () => window.clearPath());
+            sheetClearRoute.addEventListener("click", () => window.clearPath());
         </script>
     </body>
 </html>

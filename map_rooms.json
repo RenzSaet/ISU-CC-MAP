@@ -1,11 +1,11 @@
 {
     "Administration Building": {
         "first-floor": [
-            "Counceling Room",
-            "Guidance and Counceling, Testing Placement and Scholarship Unit",
+            "Counseling Room",
+            "Guidance and Counseling, Testing Placement and Scholarship Unit",
             "Cashier Office",
             "Budget Office",
-            "Comission on Audit",
+            "Commission on Audit",
             "Planning and Dev't Office",
             "Office of the Registrar",
             "Records Office",
@@ -45,7 +45,7 @@
             "Faculty Office"
         ],
         "second-floor": [
-            "Accredation Room",
+            "Accreditation Room",
             "Computer Lab",
             "BPOTS Center Function Hall"
         ]
@@ -202,7 +202,7 @@
     "CBM New Building": {
         "first-floor": [
             "Campus Business Affairs Office (CBAO)",
-            "Food Inovation Center"
+            "Food Innovation Center"
         ],
         "second-floor": [
             "Biology Laboratory",
