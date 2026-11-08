@@ -5,13 +5,34 @@
         <title>ISU CC Map</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+        <link rel="stylesheet" href="./libraries/leaflet@1.9.4/leaflet.css">
+        <link rel="stylesheet" href="./libraries/leaflet-easybutton@2/easy-button.css">
+        <link rel="stylesheet" href="./libraries/font-awesome-4.7.0/css/font-awesome.min.css">
         <style>
+            @font-face {
+                font-family: "Inter";
+                src: url("./libraries/inter/fonts/Inter_18pt-Regular.ttf") format("truetype");
+                font-weight: 400;
+            }
+
+            @font-face {
+                font-family: "Inter";
+                src: url("./libraries/inter/fonts/Inter_18pt-Medium.ttf") format("truetype");
+                font-weight: 500;
+            }
+
+            @font-face {
+                font-family: "Inter";
+                src: url("./libraries/inter/fonts/Inter_18pt-SemiBold.ttf") format("truetype");
+                font-weight: 600;
+            }
+
+            @font-face {
+                font-family: "Inter";
+                src: url("./libraries/inter/fonts/Inter_18pt-Bold.ttf") format("truetype");
+                font-weight: 700;
+            }
+            
             :root {
                 --forest: #143821;
                 --green: #2f7d4f;
@@ -904,7 +925,27 @@
             </div>
         </div>
 
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="./libraries/leaflet@1.9.4/leaflet.js"></script>
+        <script src="./libraries/leaflet-easybutton@2/easy-button.js"></script>
+
+        <!--Service Worker-->
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener("load", async () => {
+                    try {
+                        const registration = await navigator.serviceWorker.register("./service-worker.js");
+
+                        console.log("Service Worker registered.");
+                    }
+                    catch (error) {
+                        console.log("Service Worker registration failed:", error);
+                    }
+                });
+            }
+            else {
+                console.log("Service Worker is not supported by your browser.");
+            }
+        </script>
 
         <!--Display Map-->
         <script>
@@ -972,12 +1013,12 @@
             function photoCandidates(name) {
                 const lower = name.toLowerCase();
                 const list = [
-                    `img/${lower}.jpg`,
-                    `img/${lower}.jpeg`,
-                    `img/${lower}.png`,
-                    `img/${lower}.webp`,
-                    `img/${lower.replace(/\s+/g, "-")}.jpg`,
-                    `img/${name}.jpg`
+                    `images/${lower}.jpg`,
+                    `images/${lower}.jpeg`,
+                    `images/${lower}.png`,
+                    `images/${lower}.webp`,
+                    `images/${lower.replace(/\s+/g, "-")}.jpg`,
+                    `images/${name}.jpg`
                 ];
 
                 return [...new Set(list)];
@@ -1325,7 +1366,7 @@
 
         <!--Pathfinding-->
         <script type="module">
-            import PathFinder from "https://esm.sh/geojson-path-finder@2";
+            import PathFinder from "./libraries/geojson-path-finder@2/vendor/path-finder.js";
 
             let routeLayer;
 
@@ -1761,7 +1802,6 @@
         </script>
 
         <!--Current Location Marker-->
-        <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
         <script>
             let userMarker = null;
             window.userMarker = userMarker;
