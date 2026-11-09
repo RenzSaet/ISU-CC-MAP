@@ -1,4 +1,4 @@
-const cacheName = "files-cache";
+const cacheName = "isu-cc-map-cache";
 
 self.addEventListener("install", e => {
     console.log("[ServiceWorker] - Install");
@@ -11,12 +11,11 @@ self.addEventListener("install", e => {
         }
 
         const files = await response.json();
-
         const cache = await caches.open(cacheName);
 
         await cache.addAll(files);
 
-        console.log("[ServiceWorker] - App shell cached");
+        console.log("[ServiceWorker] - App resources cached");
     })());
 });
 
@@ -24,7 +23,7 @@ self.addEventListener("activate", e => {
     e.waitUntil((async () => {
         const keyList = await caches.keys();
         await Promise.all(
-            keyList.map(key => {
+            keyList.filter(key => key.startsWith("isu-cc-map-")).map(key => {
                 console.log(key);
 
                 if (key != cacheName) {
