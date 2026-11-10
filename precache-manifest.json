@@ -48,7 +48,6 @@
     "./libraries/inter/fonts/Inter_18pt-Regular.ttf",
     "./libraries/inter/fonts/Inter_18pt-SemiBold.ttf",
     "./libraries/geojson-path-finder@2/vendor/path-finder.js",
-    "./libraries/font-awesome-4.7.0/css/font-awesome.css",
     "./libraries/font-awesome-4.7.0/css/font-awesome.min.css",
     "./libraries/font-awesome-4.7.0/fonts/fontawesome-webfont.eot",
     "./libraries/font-awesome-4.7.0/fonts/fontawesome-webfont.svg",
