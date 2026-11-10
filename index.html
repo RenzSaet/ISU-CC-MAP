@@ -53,7 +53,7 @@
             body {
                 height: 100vh;
                 margin: 0;
-                font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
                 color: var(--ink);
                 -webkit-font-smoothing: antialiased;
                 overflow: hidden;
@@ -824,6 +824,150 @@
                 }
             }
 
+            /* QR Code */
+            #qr-card {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 310px;
+                padding: 16px;
+
+                background: rgb(250, 250, 250);
+                border: 1px solid rgb(220, 220, 220);
+                border-radius: 16px;
+
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0,15);
+
+                z-index: 10;
+                font-family: 'Inter', sans-serif;
+            }
+
+            .qr-header {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 15px;
+            }
+
+            .qr-icon {
+                width: 38px;
+                height: 38px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                background: #e8eef9;
+                color: var(--green);
+                border-radius: 10px;
+                font-size: 19px;
+            }
+
+            .qr-heading {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                flex: 1;
+            }
+
+            .qr-heading span {
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: var(--green);
+            }
+
+            .qr-heading small {
+                font-size: 12px;
+                color: #777;
+            }
+
+            #qr-close {
+                border: none;
+                background: transparent;
+                color: #888;
+                font-size: 16px;
+                cursor: pointer;
+                padding: 6px;
+            }
+
+            .qr-content {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+            }
+
+            .qr-image {
+                width: 112px;
+                height: 112px;
+                flex-shrink: 0;
+
+                padding: 6px;
+                background: white;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+            }
+
+            .qr-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            .qr-info {
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+            }
+
+            .qr-info h3 {
+                margin: 0;
+                font-size: 15px;
+                color: #303030;
+            }
+
+            .qr-info p {
+                margin: 0;
+                font-size: 11px;
+                line-height: 1.5;
+                color: #777;
+            }
+
+            .qr-link {
+                margin-top: 3px;
+                font-size: 10px;
+                font-weight: 600;
+                color: var(--green);
+            }
+
+            .qr-footer {
+                margin-top: 14px;
+                padding-top: 10px;
+                border-top: 1px solid #e5e5e5;
+
+                font-size: 10px;
+                color: #888;
+            }
+
+            .qr-footer i {
+                margin-right: 4px;
+                color: var(--green);
+            }
+
+            @media (max-width: 768px) {
+                #qr-card {
+                    width: 270px;
+                    padding: 13px;
+                }
+
+                .qr-image {
+                    width: 95px;
+                    height: 95px;
+                }
+            }
+
             @media (prefers-reduced-motion: reduce) {
                 * {
                     transition: none !important;
@@ -922,6 +1066,44 @@
             <div class="buttons">
                 <button class="primary" onclick="showRoute()">Show route</button>
                 <button class="secondary" onclick="window.clearPath()">Clear route</button>
+            </div>
+        </div>
+
+        <div id="qr-card">
+            <div class="qr-header">
+                <div class="qr-icon">
+                    <i class="fa fa-qrcode"></i>
+                </div>
+
+                <div class="qr-heading">
+                    <span>QUICK ACCESS</span>
+                    <small>ISU CC MAP</small>
+                </div>
+
+                <button id="qr-close">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+
+            <div class="qr-content">
+                <div class="qr-image">
+                    <img src="./qr-code.jpeg" alt="ISU CC Map QR Code">
+                </div>
+
+                <div class="qr-info">
+                    <h3>Scan to Explore</h3>
+                    <p>Access the ISU CC Map instantly by scanning this QR Code.</p>
+
+                    <span class="qr-link">
+                        <i class="fa fa-globe"></i>
+                        Open on your device
+                    </span>
+                </div>
+            </div>
+
+            <div class="qr-footer">
+                <i class="fa fa-map-marker"></i>
+                Isabela State University - Cauayan Campus
             </div>
         </div>
 
@@ -2016,13 +2198,6 @@
             showDirection.button.title = "Get directions";
             showDirection.button.setAttribute("aria-label", "Get directions");
 
-            const clearPathButton = L.easyButton("fa fa-eraser", () => {
-                window.clearPath();
-            }).addTo(map);
-            clearPathButton.setPosition("topright");
-            clearPathButton.button.title = "Clear path";
-            clearPathButton.button.setAttribute("aria-label", "Get directions");
-
             async function showRoute() {
                 window.showStatus("Calculating route...", 0);
 
@@ -2383,6 +2558,23 @@
 
             clearRoutePill.addEventListener("click", () => window.clearPath());
             sheetClearRoute.addEventListener("click", () => window.clearPath());
+        </script>
+
+        <!--QR Code-->
+        <script>
+            const qrCard = document.getElementById("qr-card");
+
+            const showQrButton = L.easyButton("fa fa-qrcode", () => {
+                qrCard.style.display = "block";
+            }).addTo(map);
+            showQrButton.setPosition("topright");
+            showQrButton.button.title = "Share map using QR Code";
+            showQrButton.button.setAttribute("aria-label", "Share map using QR Code");
+
+            const qrClose = document.getElementById("qr-close");
+            qrClose.addEventListener("click", () => {
+                qrCard.style.display = "none";
+            })
         </script>
     </body>
 </html>
