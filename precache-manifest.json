@@ -5,6 +5,7 @@
     "./map_rooms.json",
     "./map.geojson",
     "./map.svg",
+    "./qr-code.jpeg",
     "./images/administration building.jpg",
     "./images/bamboo laboratory.jpg",
     "./images/birdc.jpg",
