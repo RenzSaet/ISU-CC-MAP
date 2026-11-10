@@ -940,6 +940,11 @@
                 font-size: 10px;
                 font-weight: 600;
                 color: var(--green);
+                text-decoration: none;
+            }
+
+            .qr-link:hover {
+                text-decoration: underline;
             }
 
             .qr-footer {
@@ -958,13 +963,17 @@
 
             @media (max-width: 768px) {
                 #qr-card {
-                    width: 270px;
+                    width: 245px;
                     padding: 13px;
                 }
 
+                .qr-content {
+                    flex-direction: column;
+                }
+
                 .qr-image {
-                    width: 95px;
-                    height: 95px;
+                    width: 215px;
+                    height: 215px;
                 }
             }
 
@@ -1094,7 +1103,7 @@
                     <h3>Scan to Explore</h3>
                     <p>Access the ISU CC Map instantly by scanning this QR Code.</p>
 
-                    <span class="qr-link">
+                    <span class="qr-link" href="moonbeamhug.github.io/ISU-CC-MAP/" target="_blank">
                         <i class="fa fa-globe"></i>
                         Open on your device
                     </span>
