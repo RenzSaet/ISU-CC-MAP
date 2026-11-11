@@ -76,46 +76,6 @@
                 "coordinates": [
                     [
                         [
-                            121.764589,
-                            16.936458
-                        ],
-                        [
-                            121.76457,
-                            16.936398
-                        ],
-                        [
-                            121.764555,
-                            16.936356
-                        ],
-                        [
-                            121.764665,
-                            16.936323
-                        ],
-                        [
-                            121.764696,
-                            16.936422
-                        ],
-                        [
-                            121.764589,
-                            16.936458
-                        ]
-                    ]
-                ]
-            },
-            "properties": {
-                "name": "BIRDC",
-                "type": "building",
-                "category": "admin",
-                "department": ""
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
                             121.764451,
                             16.939275
                         ],
@@ -143,6 +103,46 @@
                 "type": "building",
                 "category": "acad",
                 "department": "Polytechnic"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            121.764589,
+                            16.936458
+                        ],
+                        [
+                            121.76457,
+                            16.936398
+                        ],
+                        [
+                            121.764555,
+                            16.936356
+                        ],
+                        [
+                            121.764665,
+                            16.936323
+                        ],
+                        [
+                            121.764696,
+                            16.936422
+                        ],
+                        [
+                            121.764589,
+                            16.936458
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Business Intelligence Research and Development Center (BIRDC)",
+                "type": "building",
+                "category": "admin",
+                "department": ""
             }
         },
         {
@@ -248,24 +248,32 @@
                 "coordinates": [
                     [
                         [
-                            121.76525,
-                            16.938694
+                            121.7651,
+                            16.938782
                         ],
                         [
-                            121.765214,
-                            16.938544
+                            121.765145,
+                            16.938773
                         ],
                         [
-                            121.765302,
-                            16.938525
+                            121.76519,
+                            16.938763
                         ],
                         [
-                            121.765335,
-                            16.938674
+                            121.765308,
+                            16.939278
                         ],
                         [
-                            121.76525,
-                            16.938694
+                            121.765255,
+                            16.939289
+                        ],
+                        [
+                            121.765217,
+                            16.939297
+                        ],
+                        [
+                            121.7651,
+                            16.938782
                         ]
                     ]
                 ]
@@ -491,50 +499,6 @@
                 "type": "building",
                 "category": "acad",
                 "department": "CED"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            121.7651,
-                            16.938782
-                        ],
-                        [
-                            121.765145,
-                            16.938773
-                        ],
-                        [
-                            121.76519,
-                            16.938763
-                        ],
-                        [
-                            121.765308,
-                            16.939278
-                        ],
-                        [
-                            121.765255,
-                            16.939289
-                        ],
-                        [
-                            121.765217,
-                            16.939297
-                        ],
-                        [
-                            121.7651,
-                            16.938782
-                        ]
-                    ]
-                ]
-            },
-            "properties": {
-                "name": "College of Arts & Criminology Building",
-                "type": "building",
-                "category": "acad",
-                "department": "CCJE"
             }
         },
         {
@@ -1588,6 +1552,42 @@
                 "coordinates": [
                     [
                         [
+                            121.76525,
+                            16.938694
+                        ],
+                        [
+                            121.765214,
+                            16.938544
+                        ],
+                        [
+                            121.765302,
+                            16.938525
+                        ],
+                        [
+                            121.765335,
+                            16.938674
+                        ],
+                        [
+                            121.76525,
+                            16.938694
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Polytechnic Building 2",
+                "type": "building",
+                "category": "acad",
+                "department": "Polytechnic"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
                             121.764214,
                             16.938852
                         ],
@@ -1619,7 +1619,7 @@
                 ]
             },
             "properties": {
-                "name": "Polytechnic Building 2",
+                "name": "Polytechnic Building 3",
                 "type": "building",
                 "category": "acad",
                 "department": "Polytechnic"
@@ -1663,7 +1663,7 @@
                 ]
             },
             "properties": {
-                "name": "Polytechnic Building 3",
+                "name": "Polytechnic Building 4",
                 "type": "building",
                 "category": "acad",
                 "department": "Polytechnic"

@@ -79,7 +79,7 @@
         ]
     },
 
-    "Polytechnic Building 2": {
+    "Polytechnic Building 3": {
         "first-floor": [
             "Automotive Shop 101",
             "Room 102",
@@ -88,7 +88,7 @@
         ]
     },
 
-    "Polytechnic Building 3": {
+    "Polytechnic Building 4": {
         "first-floor": [
             "Room 104",
             "Room 105",
@@ -120,7 +120,7 @@
         ]
     },
 
-    "College of Arts & Criminology Building": {
+    "CCJE Building 1": {
         "first-floor": [
             "Room 106",
             "Room 105",
@@ -256,6 +256,13 @@
             "Room 411",
             "Room 410",
             "Room 409"
+        ]
+    },
+
+    "Polytechnic Building 2": {
+        "first-floor": [
+            "Room 110",
+            "Room 109"
         ]
     }
 }
