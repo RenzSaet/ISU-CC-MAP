@@ -219,9 +219,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.37229475"
-     inkscape:cx="-85.953401"
-     inkscape:cy="-122.21499"
+     inkscape:zoom="0.7445895"
+     inkscape:cx="811.18522"
+     inkscape:cy="-63.79354"
      inkscape:window-width="1920"
      inkscape:window-height="974"
      inkscape:window-x="-11"
@@ -1354,7 +1354,7 @@ text{font:10px sans-serif;fill:#222;text-anchor:middle;paint-order:stroke;stroke
        x="950.34601"
        y="1079.6536"
        id="text104"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">CCJE Building 1</text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Polytechnic Building 2</text>
     <text
        x="891.04724"
        y="1066.2916"
@@ -1430,7 +1430,7 @@ text{font:10px sans-serif;fill:#222;text-anchor:middle;paint-order:stroke;stroke
        x="398.06393"
        y="1004.0176"
        id="text91"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Polytechnic Building 2</text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Polytechnic Building 3</text>
     <text
        x="460.10672"
        y="738.34906"
@@ -1470,10 +1470,18 @@ text{font:10px sans-serif;fill:#222;text-anchor:middle;paint-order:stroke;stroke
          x="404.51669"
          y="2666.8149">Office</tspan></text>
     <text
-       x="601.80133"
-       y="2326.1079"
+       x="601.76978"
+       y="2319.8765"
        id="text76-9-1-5"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke">BIRDC</text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif;text-anchor:middle;fill:#222222;stroke:#ffffff;stroke-width:2.5px;paint-order:stroke"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         x="601.76978"
+         y="2319.8765">Business Intelligence Research</tspan><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         x="601.76978"
+         y="2332.3765">Development Center</tspan></text>
     <text
        x="112.71236"
        y="2629.2048"
@@ -1523,13 +1531,9 @@ text{font:10px sans-serif;fill:#222;text-anchor:middle;paint-order:stroke;stroke
        id="text79"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif"><tspan
          sodipodi:role="line"
-         id="tspan3"
-         x="912.26807"
-         y="845.19269">College of Arts &amp; Criminology</tspan><tspan
-         sodipodi:role="line"
          id="tspan4"
          x="912.26807"
-         y="857.69269">Building</tspan></text>
+         y="845.19269">CCJE Building 1</tspan></text>
     <text
        x="630.76086"
        y="1009.9243"
@@ -1539,7 +1543,7 @@ text{font:10px sans-serif;fill:#222;text-anchor:middle;paint-order:stroke;stroke
        x="431.64246"
        y="847.74658"
        id="text81"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Polytechnic Building 3</text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:normal;font-family:sans-serif">Polytechnic Building 4</text>
     <text
        x="401.41806"
        y="925.71014"
