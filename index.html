@@ -2047,8 +2047,6 @@
                         accuracyCircle.setLatLng(userCoords);
                         accuracyCircle.setRadius(accuracy);
                     }
-
-                    showStatus("Your location is updated.", 2000);
                 }, (error) => {
                     console.error("Geolocation error:", error);
                     showStatus("Unable to retrieve your location.", 5000, true);
@@ -2129,6 +2127,7 @@
 
                 if (userMarker) {
                     userMarker.setLatLng(userLatLng);
+                    showStatus("Your location is updated.", 2000);
                 }
                 else {
                     userMarker = L.circleMarker(userLatLng, {
